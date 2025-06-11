@@ -13,6 +13,8 @@ import AppDownloadSection from "./components/App_Download_Section";
 import Footer from "./components/Footer";
 
 import LeadPlat from "./components/lead-plat";
+import TrustPlat from "./components/trust-plat";
+import StatsSlider from "./components/stats-slide";
 
 
 function App() {
@@ -24,6 +26,8 @@ function App() {
       <Brouchst />
       <AllInOne />
       <LeadPlat />
+      <TrustPlat />
+      <StatsSlider />
       <SuccessServicesSection />
       <SupportSection />
       <FAQSection />
