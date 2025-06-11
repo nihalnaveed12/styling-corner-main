@@ -4,6 +4,7 @@ import Navbar from "./components/navbar";
 import OnePlatform from "./components/one-platform";
 import SuccessServicesSection from "./components/Success_Service";
 import SupportSection from "./components/SupportSection";
+import FAQSection from "./components/FAQ_section";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <OnePlatform />
       <SuccessServicesSection />
       <SupportSection />
+      <FAQSection />
     </div>
   );
 }
