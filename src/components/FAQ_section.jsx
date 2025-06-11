@@ -37,11 +37,13 @@ const FAQSection = () => {
         src="/ellipse.png"
         alt="hello"
         className="w-auto h-auto absolute -top-82 bottom-40 right-0 mx-auto mb-12"
+        draggable="false"
       />
       <img
         src="/ellipse-2.png"
         alt=""
         className="w-auto h-auto absolute -top-40 bottom-40 left-0 mx-auto mb-12"
+        draggable="false"
       />
       <div className="max-w-4xl mx-auto">
         {/* Header */}
