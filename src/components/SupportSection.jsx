@@ -2,12 +2,12 @@ import { ArrowRight } from "lucide-react";
 
 const SupportSection = () => {
   return (
-    <div className="bg-gray-50 py-20 px-8 font-sans">
+    <div className="py-20 px-8 font-sans">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16 text-[58px]">
           <h2 className=" font-bold text-gray-900 leading-[67px]">
-            Always Here For You –
+            Always Here For You -
           </h2>
           <h3 className=" font-bold text-[#6E00B7] italic mb-6 font-serif leading-[67px]">
             Anytime, Anywhere
@@ -21,7 +21,7 @@ const SupportSection = () => {
         {/* Support Cards */}
         <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
           {/* Help Center Card */}
-          <div className="group relative overflow-hidden rounded-3xl cursor-pointer transition-all duration-500 hover:scale-105 border-gray-300 border">
+          <div className="group relative overflow-hidden rounded-3xl cursor-pointer transition-all duration-500 hover:scale-105 border-gray-300 border z-50">
             {/* Default State - Light background */}
             <div className="absolute inset-0 bg-gradient-to-br from-gray-100 to-gray-200 opacity-100 group-hover:opacity-0 transition-opacity duration-500 "></div>
 
@@ -53,7 +53,7 @@ const SupportSection = () => {
           </div>
 
           {/* Get Support Card */}
-          <div className="group relative overflow-hidden rounded-3xl cursor-pointer transition-all duration-500 hover:scale-105 border-gray-300 border">
+          <div className="group relative overflow-hidden rounded-3xl cursor-pointer transition-all duration-500 hover:scale-105 border-gray-300 border z-50">
             {/* Default State - Light background */}
             <div className="absolute inset-0 bg-gradient-to-br from-gray-100 to-gray-200 opacity-100 group-hover:opacity-0 transition-opacity duration-500"></div>
 

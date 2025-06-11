@@ -1,132 +1,145 @@
-import React, { useState, useEffect } from "react";
+const Card = ({ image, label }) => (
+  <div className="relative group overflow-hidden rounded-2xl h-full cursor-pointer">
+    <img
+      src={image}
+      alt={label}
+      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300 ease-in-out border-b-purple-600 border-b-4 rounded-2xl shadow-lg group-hover:shadow-xl"
+    />
+    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+    <div className="absolute bottom-0 left-0 right-0 p-4 transform translate-y-2 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 ease-out">
+      <h3 className="text-white font-semibold text-lg">{label}</h3>
+    </div>
+    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all duration-300"></div>
+  </div>
+);
 
 const PlatformGallerySection = () => {
-  const [currentSlide, setCurrentSlide] = useState(0);
-
-  const images = [
-    "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=400&h=300&fit=crop",
-    "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&h=300&fit=crop",
-    "https://images.unsplash.com/photo-1581833971358-2c8b550f87b3?w=400&h=300&fit=crop",
-    "https://images.unsplash.com/photo-1560472355-536de3962603?w=400&h=300&fit=crop",
-    "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&h=300&fit=crop",
-    "https://images.unsplash.com/photo-1581833971358-2c8b550f87b3?w=400&h=300&fit=crop",
-    "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=400&h=300&fit=crop",
-    "https://images.unsplash.com/photo-1560472355-536de3962603?w=400&h=300&fit=crop",
+  const topRowCards = [
+    {
+      image: "/gallery-1.jpg",
+      label: "Salon",
+    },
+    {
+      image: "/gallery-2.jpg",
+      label: "Medizinisches Spa",
+    },
+    {
+      image: "/gallery-3.jpg",
+      label: "Spa & Sauna",
+    },
+    {
+      image: "/gallery-4.jpg",
+      label: "Massage",
+    },
+    {
+      image: "/gallery-5.jpg",
+      label: "Tattoo And Piercings",
+    },
+    {
+      image: "/gallery-6.jpg",
+      label: "Tanning Salon",
+    },
+    {
+      image: "/gallery-7.jpg",
+      label: "Pet Care",
+    },
+    {
+      image: "/gallery-8.jpg",
+      label: "Barber",
+    },
   ];
 
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % Math.ceil(images.length / 4));
-    }, 3000);
-    return () => clearInterval(timer);
-  }, [images.length]);
+  const bottomRowCards = [
+    {
+      image: "/gallery-5.jpg",
+      label: "Tattoo And Piercings",
+    },
+    {
+      image: "/gallery-6.jpg",
+      label: "Tanning Salon",
+    },
+    {
+      image: "/gallery-7.jpg",
+      label: "Pet Care",
+    },
+    {
+      image: "/gallery-8.jpg",
+      label: "Barber",
+    },
+    {
+      image: "/gallery-1.jpg",
+      label: "Salon",
+    },
+    {
+      image: "/gallery-2.jpg",
+      label: "Medizinisches Spa",
+    },
+    {
+      image: "/gallery-3.jpg",
+      label: "Spa & Sauna",
+    },
+    {
+      image: "/gallery-4.jpg",
+      label: "Massage",
+    },
+  ];
 
-  const nextSlide = () => {
-    setCurrentSlide((prev) => (prev + 1) % Math.ceil(images.length / 4));
-  };
-
-  const prevSlide = () => {
-    setCurrentSlide(
-      (prev) =>
-        (prev - 1 + Math.ceil(images.length / 4)) % Math.ceil(images.length / 4)
+  // Custom auto-scroll component since Swiper isn't available
+  const AutoScrollRow = ({ cards, direction = "left", speed = 30 }) => {
+    return (
+      <div className="relative overflow-hidden h-full">
+        <div
+          className="flex h-full gap-4 w-max"
+          style={{
+            animation: `scroll-${direction} ${speed}s linear infinite`,
+          }}
+        >
+          {[...cards, ...cards, ...cards].map((card, index) => (
+            <div key={index} className="flex-shrink-0 w-[420px] h-full">
+              <Card image={card.image} label={card.label} />
+            </div>
+          ))}
+        </div>
+        <style jsx>{`
+          @keyframes scroll-left {
+            0% {
+              transform: translateX(0);
+            }
+            100% {
+              transform: translateX(-33.333%);
+            }
+          }
+          @keyframes scroll-right {
+            0% {
+              transform: translateX(-33.333%);
+            }
+            100% {
+              transform: translateX(0);
+            }
+          }
+        `}</style>
+      </div>
     );
   };
 
   return (
-    <div className="bg-white py-16 px-8">
-      <div className="max-w-6xl mx-auto">
-        {/* Header */}
-        <div className="text-left mb-12 text-[58px]">
-          <h2 className=" font-bold font-sans text-gray-900">
+    <div className="py-40 mb-40 px-8">
+      <div className=" mx-auto">
+        <div className="text-left mb-12">
+          <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
             A Platform For{" "}
-            <span className="text-[#6E00B7] font-serif italic">Everyone</span>
+            <span className="text-purple-600 font-serif italic">Everyone</span>
           </h2>
         </div>
-
-        {/* Image Gallery */}
-        <div className="relative overflow-hidden">
-          <div
-            className="flex transition-transform duration-500 ease-in-out"
-            style={{ transform: `translateX(-${currentSlide * 100}%)` }}
-          >
-            {Array.from({ length: Math.ceil(images.length / 4) }).map(
-              (_, slideIndex) => (
-                <div key={slideIndex} className="w-full flex-shrink-0">
-                  <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                    {images
-                      .slice(slideIndex * 4, slideIndex * 4 + 4)
-                      .map((image, index) => (
-                        <div
-                          key={index}
-                          className="relative group overflow-hidden rounded-xl"
-                        >
-                          <img
-                            src={image}
-                            alt={`Platform image ${slideIndex * 4 + index + 1}`}
-                            className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"
-                          />
-                          <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300"></div>
-                        </div>
-                      ))}
-                  </div>
-                </div>
-              )
-            )}
+        <div className="rounded-2xl overflow-hidden">
+          <div className="grid grid-rows-2 gap-4 h-[480px]">
+            <AutoScrollRow cards={topRowCards} direction="left" speed={25} />
+            <AutoScrollRow
+              cards={bottomRowCards}
+              direction="right"
+              speed={30}
+            />
           </div>
-
-          {/* Navigation Arrows */}
-          <button
-            onClick={prevSlide}
-            className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white rounded-full p-2 shadow-lg hover:shadow-xl transition-shadow duration-300 z-10"
-          >
-            <svg
-              className="w-6 h-6 text-gray-600"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M15 19l-7-7 7-7"
-              />
-            </svg>
-          </button>
-
-          <button
-            onClick={nextSlide}
-            className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white rounded-full p-2 shadow-lg hover:shadow-xl transition-shadow duration-300 z-10"
-          >
-            <svg
-              className="w-6 h-6 text-gray-600"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M9 5l7 7-7 7"
-              />
-            </svg>
-          </button>
-        </div>
-
-        {/* Slide Indicators */}
-        <div className="flex justify-center mt-8 space-x-2">
-          {Array.from({ length: Math.ceil(images.length / 4) }).map(
-            (_, index) => (
-              <button
-                key={index}
-                onClick={() => setCurrentSlide(index)}
-                className={`w-3 h-3 rounded-full transition-colors duration-300 ${
-                  index === currentSlide ? "bg-purple-600" : "bg-gray-300"
-                }`}
-              />
-            )
-          )}
         </div>
       </div>
     </div>
