@@ -7,8 +7,8 @@ function LeadPlat() {
 
 
       <div className="flex gap-6 justify-center items-center">
-          <img src="/Frame 36.png" alt="" className="xl:h-[500px] h-[450px]"/>
-          <img src="/Frame 112.png" alt="" className="xl:h-[450px] h-[350px] "/>
+          <img src="/Frame 36.png" alt="" className="xl:h-[480px] h-[450px]"/>
+          <img src="/Frame 112.png" alt="" className="xl:h-[400px] h-[350px] "/>
       </div>
       <div className="">
         <div className="flex flex-col gap-4">
