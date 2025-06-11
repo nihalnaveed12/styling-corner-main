@@ -11,6 +11,9 @@ import PlatformGallerySection from "./components/PlatForm_Gallery_Section";
 import CTASection from "./components/CTA";
 import AppDownloadSection from "./components/App_Download_Section";
 
+import LeadPlat from "./components/lead-plat";
+
+
 function App() {
   return (
     <div className="bg-white h-full  text-black">
@@ -19,6 +22,7 @@ function App() {
       <OnePlatform />
       <Brouchst />
       <AllInOne />
+      <LeadPlat />
       <SuccessServicesSection />
       <SupportSection />
       <FAQSection />
