@@ -1,14 +1,31 @@
+import { ArrowRight } from "lucide-react";
 const Card = ({ image, label }) => (
-  <div className="relative group overflow-hidden rounded-2xl h-full cursor-pointer">
+  <div className="relative group overflow-hidden rounded-2xl h-full cursor-pointer font-sans">
     <img
       src={image}
       alt={label}
       className="w-full h-full object-cover hover:scale-105 transition-transform duration-300 ease-in-out border-b-purple-600 border-b-4 rounded-2xl shadow-lg group-hover:shadow-xl"
     />
+
+    {/* Top Gradient Overlay */}
     <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
-    <div className="absolute bottom-0 left-0 right-0 p-4 transform translate-y-2 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 ease-out">
-      <h3 className="text-white font-semibold text-lg">{label}</h3>
+
+    {/* Bottom Text Overlay with Always-visible blur box */}
+    <div className="absolute bottom-0 left-0 right-0 p-4">
+      <div className="bg-[#6E00B780]/80 backdrop-blur-sm px-4 py-3 rounded-full w-full opacity-0 group-hover:opacity-100 transition-all duration-300 ease-out flex justify-between items-center">
+        <h3 className="text-white font-extrabold text-xl transform translate-y-2 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 ease-out flex items-center gap-2 justify-between">
+          {label}
+        </h3>
+        <div className="w-14 h-14 bg-white rounded-full flex items-center justify-center">
+          <ArrowRight
+            size={24}
+            className=" text-black transition-transform duration-300 text-right "
+          />
+        </div>
+      </div>
     </div>
+
+    {/* Hover Overlay (optional soft black tint) */}
     <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all duration-300"></div>
   </div>
 );
