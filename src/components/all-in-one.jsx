@@ -3,15 +3,15 @@ import React from "react";
 function AllInOne() {
   return (
     <section className="">
-        <div className="flex gap-4 py-[92px] justify-center">
+        <div className="flex lg:flex-row flex-col gap-4 py-[92px] justify-between">
 
-      <div className="">
+      <div className="w-[50%]">
         <div className="flex flex-col gap-4">
-          <h1 className="font-bold font-sans text-secondary">
+          <h1 className="font-bold font-sans xl:text-[58px] lg:text-[45px] sm:text-[30px] text-[20px]  text-secondary">
             <span className="text-primary font-serif italic">All-in-One</span> System To <br /> Power Your Business
           </h1>
 
-          <p className=" text-para font-sans">
+          <p className=" text-para font-sans xl:text-[16px] text-[14px]">
             The go-to choice for salons, spas, and wellness professionals—trusted and <br /> top-rated by the industry.
           </p>
         </div>

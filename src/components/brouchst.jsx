@@ -7,8 +7,8 @@ function Brouchst() {
   return (
     <div className="bg-[#EADFF4] py-[92px]">
       <section className="">
-        <div className="flex flex-col items-center max-w-[800px] mx-auto gap-6">
-          <h1 className="text-[58px] text-secondary font-bold font-sans text-center">
+        <div className="flex flex-col items-center max-w-[900px] mx-auto gap-6">
+          <h1 className="text-[20px] text-secondary font-bold font-sans text-center xl:text-[58px] lg:text-[45px] sm:text-[30px] ">
             Alles, was du für eine erfolgreiche <br />{" "}
             <span className="text-primary italic font-serif">
               Unternehmensführung

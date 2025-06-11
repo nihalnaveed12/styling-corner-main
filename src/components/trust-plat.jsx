@@ -92,7 +92,7 @@ function TrustPlat() {
     <section>
       <div className="py-[92px]">
         <div className="flex flex-col gap-8">
-          <h1 className="font-bold font-sans text-secondary">
+          <h1 className="font-bold font-sans text-secondary xl:text-[58px] lg:text-[45px] sm:text-[30px] text-[20px] ">
             The{" "}
             <span className="text-primary font-serif italic">
               Trusted Platform
