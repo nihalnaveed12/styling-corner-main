@@ -34,7 +34,7 @@
 section {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0 30px;
+  padding: 0 18px;
 }
 
 .hero {
@@ -62,7 +62,6 @@ body {
 }
 
 h1 {
-  font-size: 3.2em;
   line-height: 1.1;
 }
 

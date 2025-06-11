@@ -42,22 +42,22 @@ function Hero() {
           Rated 5 Stars ★★★★★ Trusted and loved by users on Capterra
         </p>
 
-        <div className="max-w-[1100px] mx-auto grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 justify-center gap-40">
+        <div className="max-w-[1100px] mx-auto px-2 grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 justify-center xl:gap-36 gap-26">
           <div className="">
-            <h2 className="text-[38px] font-sans font-semibold">130,000+</h2>
-            <p className="text-[18px] font-sans">Partner Companies</p>
+            <h2 className="xl:text-[38px] text-[32px] font-sans font-semibold">130,000+</h2>
+            <p className="xl:text-[18px] text-[14px]  font-sans">Partner Companies</p>
           </div>
           <div className="">
-            <h2 className="text-[38px] font-sans font-semibold">450,000+</h2>
-            <p className="text-[18px] font-sans text-center">450,000+</p>
+            <h2 className="xl:text-[38px] text-[32px] font-sans font-semibold">450,000+</h2>
+            <p className="xl:text-[18px] text-[14px] font-sans text-center">450,000+</p>
           </div>
           <div className="">
-            <h2 className="text-[38px] font-sans font-semibold">130,000+</h2>
-            <p className="text-[18px] font-sans">Partner Companies</p>
+            <h2 className="xl:text-[38px] text-[32px] font-sans font-semibold">130,000+</h2>
+            <p className="xl:text-[18px] text-[14px] font-sans">Partner Companies</p>
           </div>
           <div className="">
-            <h2 className="text-[38px] font-sans font-semibold">130,000+</h2>
-            <p className="text-[18px] font-sans text-center">Partner Companies</p>
+            <h2 className="xl:text-[38px] text-[32px] font-sans font-semibold">130,000+</h2>
+            <p className="xl:text-[18px] text-[14px] font-sans text-center">Partner Companies</p>
           </div>
         </div>
       </div>
