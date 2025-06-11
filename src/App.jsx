@@ -3,6 +3,7 @@ import Hero from "./components/Hero";
 import Navbar from "./components/navbar";
 import OnePlatform from "./components/one-platform";
 import SuccessServicesSection from "./components/Success_Service";
+import SupportSection from "./components/SupportSection";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Hero />
       <OnePlatform />
       <SuccessServicesSection />
+      <SupportSection />
     </div>
   );
 }
