@@ -1,4 +1,5 @@
 import "./App.css";
+import Brouchst from "./components/brouchst";
 import Hero from "./components/Hero";
 import Navbar from "./components/navbar";
 import OnePlatform from "./components/one-platform";
@@ -10,6 +11,7 @@ function App() {
       <Navbar />
       <Hero />
       <OnePlatform />
+      <Brouchst />
       <SuccessServicesSection />
     </div>
   );
