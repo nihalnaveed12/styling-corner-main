@@ -2,10 +2,10 @@ import React from "react";
 
 const SuccessServicesSection = () => {
   return (
-    <div className="bg-gradient-to-br from-purple-100 to-purple-200 py-16 px-8 relative overflow-hidden">
+    <div className="bg-gradient-to-br from-purple-100 to-purple-200 py-[92px] relative overflow-hidden">
       {/* Decorative dotted line */}
 
-      <div className="max-w-6xl mx-auto">
+      <section className="">
         {/* Header */}
         <div className="mb-16">
           <h2 className="text-[58px] leading-[67px] font-bold text-gray-900 mb-4 font-sans">
@@ -86,7 +86,7 @@ const SuccessServicesSection = () => {
             </p>
           </div>
         </div>
-      </div>
+      </section>
     </div>
   );
 };
