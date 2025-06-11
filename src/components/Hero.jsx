@@ -31,8 +31,8 @@ function Hero() {
       <div className="flex max-w-6xl mx-auto pr-40">
         <div className="relative">
           <img src="/Group 50.png" alt="" className="  " />
-          <div className="absolute bottom-10 w-[250px] right-60 h-[500px]">
-            <img src="/Group 50.png" alt="" className="" />
+          <div className="absolute bottom-20 w-[250px] -right-30 h-[500px]">
+            <img src="/Frame 36.png" alt="" className="" />
           </div>
         </div>
       </div>
