@@ -3,7 +3,7 @@ import React from "react";
 function LeadPlat() {
   return (
     <section className="">
-        <div className="flex gap-2 py-[92px] justify-between">
+        <div className="flex xl:flex-row flex-col gap-6 py-[92px] justify-center">
 
 
       <div className="flex gap-10 justify-center items-center">

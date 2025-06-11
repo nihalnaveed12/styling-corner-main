@@ -3,7 +3,7 @@ import React from "react";
 function AllInOne() {
   return (
     <section className="">
-        <div className="flex gap-4 py-[92px] justify-between">
+        <div className="flex gap-4 py-[92px] justify-center">
 
       <div className="">
         <div className="flex flex-col gap-4">
