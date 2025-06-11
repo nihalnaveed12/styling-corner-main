@@ -2,10 +2,10 @@ import { FaTiktok, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="bg-linear-to-b from-[#6E00B7] to-[#200333] text-white py-16 px-6">
-      <div className="max-w-7xl mx-auto">
+    <footer className="bg-linear-to-b from-[#6E00B7] to-[#200333] text-white py-16">
+      <div className="mx-auto">
         {/* Main Footer Content */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+        <div className="mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 mb-16 px-7">
           {/* Logo Section */}
           <div className="col-span-1">
             <div className="mb-8">
@@ -97,7 +97,7 @@ export default function Footer() {
         </div>
 
         {/* Brand Logos Section */}
-        <div className="flex justify-between items-center gap-6 mb-8">
+        <div className="flex justify-between items-center gap-6 mb-8 px-7">
           <div className="flex items-center gap-6">
             <img
               src="/footer-img.png"
@@ -120,7 +120,7 @@ export default function Footer() {
         {/* Bottom Section */}
         <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center pt-8 border-t border-white/20">
           {/* Copyright */}
-          <div className="mb-6 lg:mb-0">
+          <div className="mb-6 lg:mb-0 px-7">
             <p className="font-sans text-sm font-light text-white">
               © 2025 Styling Corner • Brand of Resolut Technologies GmbH |{" "}
               <span className="text-white hover:text-purple-200 transition-colors font-bold italic">
