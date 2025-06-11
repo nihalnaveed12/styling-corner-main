@@ -7,7 +7,12 @@ import OnePlatform from "./components/one-platform";
 import SuccessServicesSection from "./components/Success_Service";
 import SupportSection from "./components/SupportSection";
 import FAQSection from "./components/FAQ_section";
+import PlatformGallerySection from "./components/PlatForm_Gallery_Section";
+import CTASection from "./components/CTA";
+import AppDownloadSection from "./components/App_Download_Section";
+
 import LeadPlat from "./components/lead-plat";
+
 
 function App() {
   return (
@@ -21,6 +26,9 @@ function App() {
       <SuccessServicesSection />
       <SupportSection />
       <FAQSection />
+      <PlatformGallerySection />
+      <CTASection />
+      <AppDownloadSection />
     </div>
   );
 }
