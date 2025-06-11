@@ -8,6 +8,8 @@ import SuccessServicesSection from "./components/Success_Service";
 import SupportSection from "./components/SupportSection";
 import FAQSection from "./components/FAQ_section";
 import LeadPlat from "./components/lead-plat";
+import TrustPlat from "./components/trust-plat";
+import StatsSlider from "./components/stats-slide";
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
       <Brouchst />
       <AllInOne />
       <LeadPlat />
+      <TrustPlat />
+      <StatsSlider />
       <SuccessServicesSection />
       <SupportSection />
       <FAQSection />
