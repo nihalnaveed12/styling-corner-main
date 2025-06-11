@@ -7,6 +7,7 @@ import OnePlatform from "./components/one-platform";
 import SuccessServicesSection from "./components/Success_Service";
 import SupportSection from "./components/SupportSection";
 import FAQSection from "./components/FAQ_section";
+import LeadPlat from "./components/lead-plat";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <OnePlatform />
       <Brouchst />
       <AllInOne />
+      <LeadPlat />
       <SuccessServicesSection />
       <SupportSection />
       <FAQSection />
