@@ -32,7 +32,17 @@ const FAQSection = () => {
   };
 
   return (
-    <div className="bg-gradient-to-br from-purple-50 to-pink-50 py-20 px-8 font-sans">
+    <div className="py-40 px-8 font-sans relative">
+      <img
+        src="/ellipse.png"
+        alt="hello"
+        className="w-auto h-auto absolute -top-82 bottom-40 right-0 mx-auto mb-12"
+      />
+      <img
+        src="/ellipse-2.png"
+        alt=""
+        className="w-auto h-auto absolute -top-40 bottom-40 left-0 mx-auto mb-12"
+      />
       <div className="max-w-4xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12 text-[58px]">
@@ -41,32 +51,25 @@ const FAQSection = () => {
             <span className="text-[#6E00B7] italic font-serif">Questions</span>
           </h2>
         </div>
-        <div>
-          <image
-            src="/faq-section/ellipse.png"
-            alt="hello"
-            className="w-[500px] h-[500px]"
-            width={500}
-            height={500}
-          />
-        </div>
 
         {/* FAQ Accordion */}
         <div className="space-y-4">
           {faqData.map((item, index) => (
             <div
               key={index}
-              className="bg-white rounded-full flex shadow-sm border border-gray-100 overflow-hidden transition-all duration-300 hover:shadow-md"
+              className={`rounded-full flex shadow-sm border border-gray-100 overflow-hidden transition-all duration-300 hover:shadow-md ${
+                openItem === index ? "bg-white z-50" : " bg-background"
+              }`}
             >
               {/* Question Header */}
               <button
                 onClick={() => toggleItem(index)}
-                className="w-full px-12 py-6 text-left flex items-center justify-between"
+                className="w-full px-12 py-6 text-left flex items-center justify-between z-10"
               >
                 <div className="flex flex-col">
-                  <span className="text-lg font-bold  mr-4">
+                  <span className="text-[20px] font-[900]  mr-4">
                     {String(index + 1).padStart(2, "0")}
-                    <span className="text-lg font-semibold text-gray-900 ml-5">
+                    <span className="text-[26px] font-[900] text-gray-900 ml-5">
                       {item.question}
                     </span>
                   </span>
@@ -92,17 +95,17 @@ const FAQSection = () => {
                 </div>
                 <div className="flex items-center justify-center w-auto h-full my-auto">
                   {openItem === index ? (
-                    <div className="w-14 h-14 bg-purple-600 rounded-full flex items-center justify-center">
+                    <div className="w-14 h-14 bg-[#6E00B7] rounded-full flex items-center justify-center">
                       <ChevronDown
                         size={24}
                         className=" text-white transform rotate-180 transition-transform duration-300"
                       />
                     </div>
                   ) : (
-                    <div className="w-14 h-14 bg-gray-100 rounded-full flex items-center justify-center">
+                    <div className="w-14 h-14 bg-[#5964D324] rounded-full flex items-center justify-center">
                       <ChevronDown
                         size={24}
-                        className=" text-gray-400 transition-transform duration-300"
+                        className=" text-[#5F5959] transition-transform duration-300"
                       />
                     </div>
                   )}
