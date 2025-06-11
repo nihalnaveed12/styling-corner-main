@@ -10,6 +10,7 @@ import FAQSection from "./components/FAQ_section";
 import PlatformGallerySection from "./components/PlatForm_Gallery_Section";
 import CTASection from "./components/CTA";
 import AppDownloadSection from "./components/App_Download_Section";
+import Footer from "./components/Footer";
 
 import LeadPlat from "./components/lead-plat";
 
@@ -29,6 +30,7 @@ function App() {
       <PlatformGallerySection />
       <CTASection />
       <AppDownloadSection />
+      <Footer />
     </div>
   );
 }
