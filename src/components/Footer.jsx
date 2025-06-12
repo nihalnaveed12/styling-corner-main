@@ -121,8 +121,8 @@ export default function Footer() {
         <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center pt-8 border-t border-white/20">
           {/* Copyright */}
           <div className="mb-6 lg:mb-0 px-7">
-            <p className="font-sans text-sm font-light text-white">
-              © 2025 Styling Corner • Brand of Resolut Technologies GmbH |{" "}
+            <p className="font-sans font-light text-[16px] text-white">
+              © 2025 Styling Corner ® Brand of Resolut Technologies GmbH |{" "}
               <span className="text-white hover:text-purple-200 transition-colors font-bold italic">
                 Customer-Login
               </span>
@@ -132,7 +132,7 @@ export default function Footer() {
           {/* Right side - Social links and legal */}
           <div className="flex flex-col lg:flex-row items-start lg:items-center gap-6">
             {/* Legal Links */}
-            <div className="flex items-center gap-4 font-sans text-sm font-light text-white ">
+            <div className="flex items-center gap-4 font-sans text-[16px] font-light text-white ">
               <p className="hover:text-white transition-colors">AGB's</p>
               <span>|</span>
               <p className="hover:text-white transition-colors">
