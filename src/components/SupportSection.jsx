@@ -26,26 +26,26 @@ const SupportSection = () => {
             <div className="absolute inset-0 bg-gradient-to-br from-gray-100 to-gray-200 opacity-100 group-hover:opacity-0 transition-opacity duration-500 "></div>
 
             {/* Hover State - Purple gradient */}
-            <div className="absolute inset-0 bg-gradient-to-br from-purple-500 via-purple-600 to-purple-700 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+            <div className="absolute inset-0 bg-gradient-to-br from-purple-500 via-purple-600 to-purple-700 opacity-100 "></div>
 
             {/* Content */}
             <div className="relative z-10 p-10 h-full flex flex-col justify-between min-h-[280px]">
               <div>
-                <h3 className="text-2xl font-bold mb-4 text-gray-900 group-hover:text-white transition-colors duration-500">
+                <h3 className="text-2xl font-bold mb-4 text-white transition-colors duration-500">
                   Help Center
                 </h3>
-                <p className="text-gray-600 group-hover:text-white/90 transition-colors duration-500 leading-relaxed mb-8">
+                <p className="text-white/90 transition-colors duration-500 leading-relaxed mb-8">
                   Browse our knowledge base for expert tips, how-to guides, and
                   useful insights.
                 </p>
               </div>
 
               <div className="flex items-center">
-                <span className=" group-hover:text-white font-medium transition-colors duration-500">
+                <span className=" text-white font-medium transition-colors duration-500">
                   Go to Help Center
                 </span>
                 <ArrowRight
-                  className="ml-2 group-hover:text-white transition-colors duration-500"
+                  className="ml-2 text-white transition-colors duration-500"
                   size={22}
                 />
               </div>
@@ -55,29 +55,24 @@ const SupportSection = () => {
           {/* Get Support Card */}
           <div className="group relative overflow-hidden rounded-3xl cursor-pointer transition-all duration-500 hover:scale-105 border-gray-300 border z-50">
             {/* Default State - Light background */}
-            <div className="absolute inset-0 bg-gradient-to-br from-gray-100 to-gray-200 opacity-100 group-hover:opacity-0 transition-opacity duration-500"></div>
-
-            {/* Hover State - Purple gradient */}
-            <div className="absolute inset-0 bg-gradient-to-br from-purple-500 via-purple-600 to-purple-700 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-
             {/* Content */}
             <div className="relative z-10 p-10 h-full flex flex-col justify-between min-h-[280px]">
               <div>
-                <h3 className="text-2xl font-bold mb-4 text-gray-900 group-hover:text-white transition-colors duration-500">
+                <h3 className="text-2xl font-bold mb-4 text-gray-900 duration-500">
                   Get Support
                 </h3>
-                <p className="text-gray-600 group-hover:text-white/90 transition-colors duration-500 leading-relaxed mb-8">
+                <p className="text-gray-600  duration-500 leading-relaxed mb-8">
                   Reach out to us by phone or email — our team is ready to help
                   whenever you need it.
                 </p>
               </div>
 
               <div className="flex items-center">
-                <span className=" group-hover:text-white font-medium transition-colors duration-500">
+                <span className=" font-medium text-black duration-500">
                   Contact Us
                 </span>
                 <ArrowRight
-                  className="ml-2 group-hover:text-white transition-colors duration-500"
+                  className="ml-2  transition-colors duration-500"
                   size={22}
                 />
               </div>
