@@ -79,10 +79,13 @@ export default function StatsSlider() {
         <div className="text-center mb-12">
           <h1 className="text-4xl lg:text-5xl font-bold font-sans text-black mb-4">
             Smarter Business.{" "}
-            <span className="text-purple-600 italic font-serif">Proven Results</span>
+            <span className="text-purple-600 italic font-serif">
+              Proven Results
+            </span>
           </h1>
           <p className="text-gray-600 text-lg max-w-3xl mx-auto leading-relaxed">
-            Styling Corner empowers you to grow faster, serve better, and earn more. Here's what our partners are experiencing:
+            Styling Corner empowers you to grow faster, serve better, and earn
+            more. Here's what our partners are experiencing:
           </p>
         </div>
 
@@ -106,13 +109,19 @@ export default function StatsSlider() {
           {stats.map((stat) => (
             <div
               key={stat.id}
-              className="flex-shrink-0 w-80 min-w-[320px] bg-purple-100 rounded-2xl p-8 select-none transform transition-transform duration-300 ease-in-out hover:scale-105 hover:bg-purple-200 shadow hover:shadow-xl"
+              className=" w-80 min-w-[380px] bg-purple-100 rounded-2xl p-8 select-none transform transition-transform duration-300 ease-in-out hover:ring-purple-700 hover:ring mt-2 mx-2"
             >
               <div className="mb-4">
-                <h2 className="text-5xl font-bold text-black mb-2">{stat.percentage}</h2>
-                <h3 className="text-xl font-semibold text-black leading-tight">{stat.title}</h3>
+                <h2 className="text-5xl font-bold text-black mb-2">
+                  {stat.percentage}
+                </h2>
+                <h3 className="text-xl font-semibold text-black leading-tight">
+                  {stat.title}
+                </h3>
               </div>
-              <p className="text-gray-700 text-base leading-relaxed">{stat.description}</p>
+              <p className="text-gray-700 text-base leading-relaxed">
+                {stat.description}
+              </p>
             </div>
           ))}
         </div>
