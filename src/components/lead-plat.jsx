@@ -6,9 +6,9 @@ function LeadPlat() {
         <div className="flex lg:flex-row flex-col-reverse gap-6 py-[92px] justify-between">
 
 
-      <div className="flex gap-8  justify-center items-center">
-          <img src="/Frame 36.png" alt="" className="xl:h-[500px] h-[450px]"/>
-          <img src="/Frame 112.png" alt="" className="xl:h-[450px] h-[350px] "/>
+      <div className="flex gap-6 justify-center items-center">
+          <img src="/Frame 36.png" alt="" className="xl:h-[480px] h-[450px]"/>
+          <img src="/Frame 112.png" alt="" className="xl:h-[400px] h-[350px] "/>
       </div>
       <div className="">
         <div className="flex flex-col gap-4">
