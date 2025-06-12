@@ -92,7 +92,7 @@ function OnePlatform() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {Images.map((image, index) => (
               <div
-                className="overflow-hidden cursor-pointer shadow-lg relative rounded-xl group h-[330px]"
+                className="overflow-hidden cursor-pointer shadow-lg relative rounded-xl group h-[330px] border-b-5 border-purple-700"
                 key={index}
               >
                 <div className="absolute inset-0 transition-all duration-500 ease-in-out">
@@ -124,8 +124,6 @@ function OnePlatform() {
             ))}
           </div>
         </div>
-
-       
       </div>
     </section>
   );

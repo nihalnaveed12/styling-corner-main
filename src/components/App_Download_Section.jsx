@@ -19,20 +19,20 @@ export default function AppDownloadSection() {
         </div>
 
         {/* Main Content */}
-        <div className="flex flex-col lg:flex-row items-center justify-center gap-12 lg:gap-20">
+        <div className="flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-20">
           {/* Left Section - Customer App */}
           <div className="flex flex-row-reverse items-center text-center lg:text-left">
             <div className="mb-8">
               <img
                 src="/mobile-img.png"
                 alt="Customer booking app interface"
-                className="w-auto h-auto mx-auto lg:mx-0"
-                width={1000}
-                height={1000}
+                className="w-[236px] h-[316px] mx-auto lg:mx-0"
+                width={1200}
+                height={1200}
               />
             </div>
             <div className="max-w-sm">
-              <h2 className="text-3xl font-sans font-bold text-gray-900 mb-4">
+              <h2 className="text-[38px] leading-[100%] font-sans font-[900] text-gray-900 mb-4">
                 Booking App For Customers
               </h2>
               <p className="text-gray-700 font-sans mb-6 leading-relaxed">
@@ -65,7 +65,7 @@ export default function AppDownloadSection() {
               />
             </div>
             <div className="max-w-sm">
-              <h2 className="text-3xl font-sans font-bold text-gray-900 mb-4">
+              <h2 className="text-[38px] leading-[100%] font-sans font-[900] text-gray-900 mb-4">
                 Business App For Companies
               </h2>
               <p className="text-gray-700 font-sans mb-6 leading-relaxed">
