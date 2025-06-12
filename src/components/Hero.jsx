@@ -6,7 +6,7 @@ function Hero() {
     <div className="hero py-[92px]">
       <div className="">
         <div className="flex flex-col gap-6">
-          <h1 className="font-bold font-sans text-center text-secondary">
+          <h1 className="font-[900] font-sans text-center text-secondary text-[64px] leading-[100%]">
             Smart Solutions for Modern <br />
             <span className="font-serif italic text-primary">
               Salons & Spas
@@ -44,20 +44,36 @@ function Hero() {
 
         <div className="max-w-[1100px] mx-auto px-2 grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 justify-center xl:gap-36 gap-26">
           <div className="">
-            <h2 className="xl:text-[38px] text-[32px] font-sans font-semibold">130,000+</h2>
-            <p className="xl:text-[18px] text-[14px]  font-sans">Partner Companies</p>
+            <h2 className="xl:text-[38px] text-[32px] font-sans font-semibold">
+              130,000+
+            </h2>
+            <p className="xl:text-[18px] text-[14px]  font-sans">
+              Partner Companies
+            </p>
           </div>
           <div className="">
-            <h2 className="xl:text-[38px] text-[32px] font-sans font-semibold">450,000+</h2>
-            <p className="xl:text-[18px] text-[14px] font-sans text-center">450,000+</p>
+            <h2 className="xl:text-[38px] text-[32px] font-sans font-semibold">
+              450,000+
+            </h2>
+            <p className="xl:text-[18px] text-[14px] font-sans text-center">
+              450,000+
+            </p>
           </div>
           <div className="">
-            <h2 className="xl:text-[38px] text-[32px] font-sans font-semibold">130,000+</h2>
-            <p className="xl:text-[18px] text-[14px] font-sans">Partner Companies</p>
+            <h2 className="xl:text-[38px] text-[32px] font-sans font-semibold">
+              130,000+
+            </h2>
+            <p className="xl:text-[18px] text-[14px] font-sans">
+              Partner Companies
+            </p>
           </div>
           <div className="">
-            <h2 className="xl:text-[38px] text-[32px] font-sans font-semibold">130,000+</h2>
-            <p className="xl:text-[18px] text-[14px] font-sans text-center">Partner Companies</p>
+            <h2 className="xl:text-[38px] text-[32px] font-sans font-semibold">
+              130,000+
+            </h2>
+            <p className="xl:text-[18px] text-[14px] font-sans text-center">
+              Partner Companies
+            </p>
           </div>
         </div>
       </div>

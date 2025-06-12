@@ -98,18 +98,7 @@ export default function Footer() {
 
         {/* Brand Logos Section */}
         <div className="flex justify-between items-center gap-6 mb-8 px-7">
-          <div className="flex items-center gap-6">
-            <img
-              src="/footer-img.png"
-              alt="Resolut Technologies"
-              className="h-auto w-auto"
-            />
-            <img
-              src="/footer-img-2.png"
-              alt="Swiss made software hosted in Switzerland"
-              className="h-auto w-auto"
-            />
-          </div>
+          <div className="flex items-center gap-6"></div>
           <div className="flex items-center gap-6">
             <FaInstagram className="text-2xl text-white hover:text-purple-200 transition-colors cursor-pointer" />
             <FaTiktok className="text-2xl text-white hover:text-purple-200 transition-colors cursor-pointer" />
