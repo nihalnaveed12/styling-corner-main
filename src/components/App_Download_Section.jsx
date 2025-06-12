@@ -22,11 +22,13 @@ export default function AppDownloadSection() {
         <div className="flex flex-col lg:flex-row items-center justify-center gap-12 lg:gap-20">
           {/* Left Section - Customer App */}
           <div className="flex flex-row-reverse items-center text-center lg:text-left">
-            <div className="mb-8 w-[199px] h-[384px]">
+            <div className="mb-8">
               <img
                 src="/mobile-img.png"
                 alt="Customer booking app interface"
-                className="w-[199px] h-[384px] mx-auto lg:mx-0"
+                className="w-auto h-auto mx-auto lg:mx-0"
+                width={1000}
+                height={1000}
               />
             </div>
             <div className="max-w-sm">
@@ -40,7 +42,7 @@ export default function AppDownloadSection() {
                 <img
                   src="/apple.png"
                   alt="Download on App Store"
-                  className="h--auto w-auto"
+                  className="h-auto w-auto"
                 />
                 <img
                   src="/play-store.png"
@@ -53,11 +55,13 @@ export default function AppDownloadSection() {
 
           {/* Right Section - Business App */}
           <div className="flex flex-row-reverse items-center text-center lg:text-left">
-            <div className="mb-8 relative w-[255px] h-[384px]">
+            <div className="mb-8 relative">
               <img
                 src="/mobile-img-2.png"
                 alt="Business management app interface"
-                className="w-[255px] h-[384px] mx-auto lg:mx-0"
+                className="w-[350px] h-[380px] mx-auto lg:mx-0 relative top-9"
+                width={1000}
+                height={1000}
               />
             </div>
             <div className="max-w-sm">
