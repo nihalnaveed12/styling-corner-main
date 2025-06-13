@@ -1,126 +1,147 @@
 import React from "react";
-import { useState } from "react"
-import { Calendar, Wallet, ChevronUp, ChevronDown } from "lucide-react"
-
+import { useState } from "react";
+import { Calendar, Wallet, TrendingUp } from "lucide-react";
 
 function Brouchst() {
+  const [activeCard, setActiveCard] = useState(1); // Middle card active by default
+
+  const cards = [
+    {
+      id: 0,
+      icon: <TrendingUp className="h-8 w-8" />,
+      title: "Wachsen",
+      description:
+        "Behalte den Überblick über Buchungen, Einnahmen, Kundendaten, Standorte und Teammitglieder. Nutze umfassende Auswertungen um fundierte Entscheidungen für dein Business zu treffen.",
+    },
+    {
+      id: 1,
+      icon: <Calendar className="h-8 w-8" />,
+      title: "Steuern",
+      description:
+        "Behalte den Überblick über Buchungen, Einnahmen, Kundendaten, Standorte und Teammitglieder. Nutze umfassende Auswertungen um fundierte Entscheidungen für dein Business zu treffen.",
+    },
+    {
+      id: 2,
+      icon: <Wallet className="h-8 w-8" />,
+      title: "Bezahlt Werden",
+      description:
+        "Erhalte deine Zahlungen schnell und unkompliziert dank moderner Zahlungsabwicklung. Nutze Anzeigen, um Ausfälle zu vermeiden, und gestalte den Bezahlprozess einfacher denn je.",
+    },
+  ];
+
   return (
-    <div className="bg-[#EADFF4] py-[92px]">
-      <section className="">
-        <div className="flex flex-col items-center max-w-[900px] mx-auto gap-6">
-          <h1 className="text-[20px] text-secondary font-bold font-sans text-center xl:text-[58px] lg:text-[45px] sm:text-[30px] ">
-            Alles, was du für eine erfolgreiche <br />{" "}
-            <span className="text-primary italic font-serif">
+    <div className="bg-gradient-to-b from-purple-100 to-purple-200 h-[800px] py-16">
+      <section className="max-w-4xl mx-auto px-6">
+        {/* Header */}
+        <div className="text-center mb-16">
+          <h1 className="text-4xl md:text-[58px] font-bold text-[#070027] mb-6 leading-[99%] font-sans">
+            Alles, Was Du Für Eine Erfolgreiche{" "}
+            <span className="text-[#6E00B7] italic font-serif">
               Unternehmensführung
             </span>{" "}
-            brauchst
+            Brauchst
           </h1>
-
-          <p className="text-para font-sans text-[16px] text-center">
+          <p className="text-gray-600 text-lg max-w-2xl mx-auto leading-relaxed">
             Mit Styling Corner wird die Benutzererfahrung für dein Team und
             deine Kunden einfacher, reibungsloser und effizienter – dank
             moderner Funktionen.
           </p>
         </div>
 
-        <div className="flex flex-col items-center justify-center pt-20">
-          <div className="max-w-4xl w-full space-y-6 relative">
+        {/* Cards Stack */}
+        <div className="relative max-w-5xl mx-auto my-auto">
+          {cards.map((card, index) => (
             <Card
-              icon={<FlaskIcon />}
-              title="Wachsen"
-              description="Erhalte mehr Kunden über eine der führenden Plattformen der Beauty- und Wellnessbranche."
+              key={index}
+              {...card}
+              isActive={activeCard === card.id}
+              onClick={() => setActiveCard(card.id)}
+              zIndex={cards.length - Math.abs(activeCard - card.id)}
+              position={card.id}
+              activePosition={activeCard}
             />
-            <Card
-              icon={<Calendar className="h-12 w-12" />}
-              title="Steuern"
-              description="Behalte den Überblick über Buchungen, Einnahmen, Kundendaten, Standorte und Teammitglieder. Nutze umfassende Auswertungen um fundierte Entscheidungen für dein Business zu treffen."
-              showArrows
-            />
-            <Card
-              icon={<Wallet className="h-12 w-12" />}
-              title="Bezahlt Werden"
-              description="Erhalte deine Zahlungen schnell und unkompliziert dank moderner Zahlungsabwicklung. Nutze Anzeigen, um Ausfälle zu vermeiden, und gestalte den Bezahlprozess einfacher denn je."
-            />
-          </div>
+          ))}
         </div>
       </section>
     </div>
   );
 }
 
-export default Brouchst;
-
-
 function Card({
   icon,
   title,
   description,
-  showArrows = false,
+  isActive,
+  onClick,
+  zIndex,
+  position,
+  activePosition,
 }) {
-  const [isHovered, setIsHovered] = useState(false)
+  const getCardStyles = () => {
+    const baseStyles =
+      "absolute w-full transition-all duration-500 ease-out cursor-pointer rounded-full overflow-hidden font-sans";
+
+    if (isActive) {
+      return `${baseStyles} bg-[#6E00B7] text-white shadow-2xl transform scale-105`;
+    } else {
+      return `${baseStyles} bg-white/80 backdrop-blur-sm text-gray-600 shadow-lg filter blur-[2px] hover:blur-[1px]`;
+    }
+  };
+
+  const getTransform = () => {
+    const offset = position - activePosition;
+    return `translateY(${offset}px)`;
+  };
 
   return (
     <div
-      className={`relative rounded-full p-3 transition-all duration-500 ease-out cursor-pointer shadow-xl ${
-        isHovered
-          ? "bg-gradient-to-r from-purple-700 to-purple-800 text-white transform scale-110 z-10"
-          : "bg-white text-gray-800 hover:shadow-2xl"
-      }`}
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
+      className={getCardStyles()}
+      onClick={onClick}
       style={{
-        transformOrigin: "center center",
+        zIndex: zIndex,
+        transform: getTransform(),
+        top: `${position * 120}px`,
       }}
     >
-      <div className="flex items-start gap-5 relative">
-        <div
-          className={`p-5 rounded-full transition-all duration-300 flex-shrink-0 ${
-            isHovered ? "bg-white/20 backdrop-blur-sm" : "bg-gray-100"
-          }`}
-        >
-          <div className={isHovered ? "text-white" : "text-purple-700"}>{icon}</div>
-        </div>
-        <div className="flex-1 min-w-0">
-          <h3
-            className={`font-bold text-xl mb-2 transition-colors duration-300 ${
-              isHovered ? "text-white" : "text-gray-900"
+      <div className="px-4 py-4">
+        <div className="flex items-start gap-6">
+          {/* Icon */}
+          <div
+            className={`p-7 rounded-full flex-shrink-0 transition-all duration-300 my-auto ${
+              isActive
+                ? "bg-white/20 backdrop-blur-sm text-white"
+                : "bg-purple-100 text-purple-600"
             }`}
           >
-            {title}
-          </h3>
-          <p
-            className={`text-sm leading-relaxed transition-colors duration-300 ${
-              isHovered ? "text-white/95" : "text-gray-600"
-            }`}
-          >
-            {description}
-          </p>
-        </div>
+            {icon}
+          </div>
 
-        
+          {/* Content */}
+          <div className="flex-1 min-w-0">
+            <h3
+              className={`font-bold text-2xl mb-3 transition-colors duration-300 ${
+                isActive ? "text-white" : "text-gray-800"
+              }`}
+            >
+              {title}
+            </h3>
+            <p
+              className={`text-base font-light leading-relaxed transition-colors duration-300 ${
+                isActive ? "text-white/95" : "text-gray-600"
+              }`}
+            >
+              {description}
+            </p>
+          </div>
+        </div>
       </div>
+
+      {/* Subtle border for inactive cards */}
+      {!isActive && (
+        <div className="absolute inset-0 border border-purple-200 rounded-2xl pointer-events-none" />
+      )}
     </div>
-  )
+  );
 }
 
-// Custom Flask icon to match the reference image
-function FlaskIcon() {
-  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="40"
-      height="40"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="M10 2v7.31a2 2 0 0 0 .584 1.414L16 16.17V19a2 2 0 0 1-2 2H10a2 2 0 0 1-2-2v-2.83l5.416-5.245A2 2 0 0 0 14 9.31V2" />
-      <path d="M7 2h10" />
-      <path d="M12 9v4" />
-    </svg>
-  )
-}
-
+export default Brouchst;
