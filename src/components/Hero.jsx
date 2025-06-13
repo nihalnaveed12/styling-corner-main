@@ -83,7 +83,7 @@ function Hero() {
       </div>
 
       <div className="absolute bottom-0  z-[10]">
-        <img src="/Ellipse 24.png" alt="" className="opacity-20 blur-xl w-42 " />
+        <img src="/Ellipse 24.png" alt="" className="opacity-20 blur-2xl w-50 " />
       </div>
      <div className="absolute bottom-20 md:left-[25%] left-60  z-[12]">
         <img src="/Ellipse 21.png" alt="" className="opacity-20 blur-xl w-74 shadow-2xl inset-8 inset-ring-orange-500 rounded-full border-none outline-none shadow-[#D2998D]" />
@@ -93,6 +93,12 @@ function Hero() {
       </div>
       <div className="absolute bottom-0 -right-0 z-[12]">
         <img src="/Ellipse 21.png" alt="" className="opacity-20 blur-xl w-74 shadow-2xl inset-8 inset-ring-orange-500 rounded-full border-none outline-none shadow-[#D2998D]" />
+      </div>
+      <div className="absolute bottom-40 right-[40%] z-[12]">
+        <img src="/Ellipse 26.png" alt="" className="opacity-25 blur-xl shadow-2xl inset-8 inset-ring-orange-500 rounded-full border-none outline-none shadow-[#D2998D]" />
+      </div>
+      <div className="absolute bottom-[30%] right-0 z-[12]">
+        <img src="/Ellipse 26.png" alt="" className="opacity-15 blur-xl shadow-2xl inset-8 inset-ring-orange-500 rounded-full border-none outline-none shadow-[#D2998D]" />
       </div>
       
 

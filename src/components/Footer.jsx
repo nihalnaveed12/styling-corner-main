@@ -107,7 +107,8 @@ export default function Footer() {
         </div>
 
         {/* Bottom Section */}
-        <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center pt-8 border-t border-white/20">
+        
+        <div className="flex flex-col lg:flex-row px-4 justify-between items-start lg:items-center pt-8 border-t border-white/20">
           {/* Copyright */}
           <div className="mb-6 lg:mb-0 px-7">
             <p className="font-sans font-light text-[16px] text-white">
@@ -119,7 +120,7 @@ export default function Footer() {
           </div>
 
           {/* Right side - Social links and legal */}
-          <div className="flex flex-col lg:flex-row items-start lg:items-center gap-6">
+          <div className="flex flex-col lg:flex-row px-7 items-start lg:items-center gap-6">
             {/* Legal Links */}
             <div className="flex items-center gap-4 font-sans text-[16px] font-light text-white ">
               <p className="hover:text-white transition-colors">AGB's</p>
