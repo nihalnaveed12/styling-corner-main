@@ -120,35 +120,34 @@ function TrustPlat() {
               {getVisibleTestimonials().map((testimonial, index) => (
                 <div
                   key={`${testimonial.id}-${index}`}
-                  className="flex-shrink-0 w-[280px] bg-white rounded-lg p-6 shadow-sm"
+                  className="flex-shrink-0 w-[280px] bg-[#F1F1F1] cursor-pointer rounded-lg p-6 shadow-lg font-sans"
                   style={{ minWidth: "280px" }}
                 >
                   {/* Avatar and Info */}
                   <div className="flex items-center gap-3 mb-4">
-                    
-                      <img
-                        src={testimonial.avatar || "/placeholder.svg"}
-                        alt={testimonial.name}
-                        className="w-12 object-cover object-center h-12 rounded-full "
-                      />
-                    
+                    <img
+                      src={testimonial.avatar || "/placeholder.svg"}
+                      alt={testimonial.name}
+                      className="w-12 object-cover object-top h-12 rounded-full "
+                    />
+
                     <div>
-                      <h3 className="font-medium text-black text-base">
+                      <h3 className="font-[700] text-black text-[20px">
                         {testimonial.name}
                       </h3>
-                      <p className="text-gray-500 text-xs">
+                      <p className="text-[#070027] text-[16px] font-[400]">
                         {testimonial.location}
                       </p>
                     </div>
                   </div>
 
                   {/* Title */}
-                  <h4 className="font-semibold text-black text-base mb-2">
+                  <h4 className="font-[700] text-black text-[17px] mb-2">
                     {testimonial.title}
                   </h4>
 
                   {/* Content */}
-                  <p className="text-gray-600 text-sm leading-relaxed mb-4 min-h-[80px]">
+                  <p className="text-[#070027] font-[400] text-[14px] mb-4 min-h-[80px]">
                     {testimonial.content}
                   </p>
 
