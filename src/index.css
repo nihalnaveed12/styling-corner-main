@@ -39,10 +39,15 @@ section {
 
 .hero {
   background: #6e00b7;
-  background: linear-gradient(0deg,
-      rgba(110, 0, 183, 1) 0%,
-      rgba(255, 255, 255, 1) 70%);
+  background: linear-gradient(360deg,
+      rgb(110, 0, 183) 5%,
+      rgba(255, 255, 255, 1) 90%);
 }
+
+/* .hero {
+  background: radial-gradient(circle at 50% 20%, rgba(255, 255, 255, 0.5), transparent 40%),
+    linear-gradient(to bottom, #ffffff 0%, #f8e7ff 30%, #b36cf6 60%, #6414e9 100%);
+} */
 
 a {
   font-weight: 500;
