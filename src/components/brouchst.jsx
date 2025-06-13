@@ -106,15 +106,20 @@ function Card({
       <div className="px-4 py-4">
         <div className="flex items-start gap-6">
           {/* Icon */}
-          <div
-            className={`p-7 rounded-full flex-shrink-0 transition-all duration-300 my-auto ${
-              isActive
-                ? "bg-white/20 backdrop-blur-sm text-white"
-                : "bg-purple-100 text-purple-600"
-            }`}
-          >
-            {icon}
-          </div>
+          {position === 1 && (
+            <img
+              src="/middle.png"
+              alt="Middle Card Icon"
+              className={`rounded-full flex-shrink-0 transition-all duration-300 my-auto w-auto h-auto`}
+            />
+          )}
+          {position !== 1 && (
+            <img
+              src="/up-down.png"
+              alt="Card Icon"
+              className={`rounded-full flex-shrink-0 transition-all duration-300 my-auto w-auto h-auto`}
+            />
+          )}
 
           {/* Content */}
           <div className="flex-1 min-w-0">
