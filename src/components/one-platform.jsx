@@ -10,57 +10,57 @@ function OnePlatform() {
     },
     {
       src: "/p2.jpg",
-      name: "Salon",
+      name: "Medizinisches Spa",
       href: "/",
     },
     {
       src: "/p3.jpg",
-      name: "Salon",
+      name: "Spa & Sauna",
       href: "/",
     },
     {
-      src: "/p1.jpg",
-      name: "Salon",
+      src: "/p4.jpg",
+      name: "Massage",
       href: "/",
     },
     {
-      src: "/p2.jpg",
-      name: "Salon",
+      src: "/p5.jpg",
+      name: "Fitness and relaxation",
       href: "/",
     },
     {
-      src: "/p3.jpg",
-      name: "Salon",
+      src: "/p6.jpg",
+      name: "Physiotherapy",
       href: "/",
     },
     {
-      src: "/p1.jpg",
-      name: "Salon",
+      src: "/p7.jpg",
+      name: "healthcare facility",
       href: "/",
     },
     {
-      src: "/p2.jpg",
-      name: "Salon",
+      src: "/p8.jpg",
+      name: "Tattoos and piercings",
       href: "/",
     },
     {
-      src: "/p3.jpg",
-      name: "Salon",
+      src: "/p9.jpg",
+      name: "tanning salon",
       href: "/",
     },
     {
-      src: "/p1.jpg",
-      name: "Salon",
+      src: "/p10.jpg",
+      name: "Pet care",
       href: "/",
     },
     {
-      src: "/p2.jpg",
-      name: "Salon",
+      src: "/p11.jpg",
+      name: "Barber",
       href: "/",
     },
     {
-      src: "/p1.jpg",
-      name: "Salon",
+      src: "/p12.jpg",
+      name: "Nails",
       href: "/",
     },
   ];
@@ -100,7 +100,7 @@ function OnePlatform() {
                     key={index}
                     src={image.src}
                     alt={`Platform Image ${index + 1}`}
-                    className="h-[330px] rounded-xl shadow-lg object-cover r transition-all duration-500 ease-in-out group-hover:object-left"
+                    className="h-[330px] rounded-xl shadow-lg object-cover w-full object-center transition-all duration-500 ease-in-out group-hover:object-left"
                   />
 
                   <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
@@ -114,7 +114,7 @@ function OnePlatform() {
 
                 <div className="absolute  bottom-4 left-4 right-4 opacity-0 transition-all duration-300 ease-in-out group-hover:opacity-100">
                   <div className="bg-purple-600 opacity-80  rounded-full px-4 py-3 flex items-center justify-between transform translate-y-full transition-transform duration-500 ease-out group-hover:translate-y-0">
-                    <h3 className="text-white font-semibold text-lg">Salon</h3>
+                    <h3 className="text-white font-semibold text-lg">{image.name}</h3>
                     <div className="bg-white rounded-full p-2">
                       <ArrowRight className="w-4 h-4 text-purple-600" />
                     </div>

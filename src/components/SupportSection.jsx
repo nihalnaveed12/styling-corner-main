@@ -40,6 +40,19 @@ const SupportSection = () => {
                 </p>
               </div>
 
+              <div className="absolute top-0 left-0 ">
+                <img src="/Ellipse 24.png" alt="" className="w-24 blur-lg opacity-30"/>
+              </div>
+              <div className="absolute bottom-0 left-0 ">
+                <img src="/Ellipse 24.png" alt="" className="w-16 blur-lg opacity-30"/>
+              </div>
+              <div className="absolute left-[50%]">
+                <img src="/Ellipse 35.png" alt="" className=" blur-lg opacity-50"/>
+              </div>
+              <div className="absolute bottom-0  right-0">
+                <img src="/Ellipse 35.png" alt="" className=" blur-lg opacity-50"/>
+              </div>
+
               <div className="flex items-center">
                 <span className=" text-white font-medium transition-colors duration-500">
                   Go to Help Center

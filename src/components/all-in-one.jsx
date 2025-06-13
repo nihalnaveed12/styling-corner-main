@@ -12,7 +12,7 @@ function AllInOne() {
           </h1>
 
           <p className=" text-para font-sans xl:text-[16px] text-[14px]">
-            The go-to choice for salons, spas, and wellness professionals—trusted and <br /> top-rated by the industry.
+            The go-to choice for salons, spas, and wellness professionals—trusted <br /> and top-rated by the industry.
           </p>
         </div>
 
@@ -24,14 +24,14 @@ function AllInOne() {
         </div>
        <div className="pt-10">
             <div className="border-l-4 xl:px-6 px-2 border-[#6E00B7] xl:h-[75px] h-[50px] flex flex-col xl:w-[529px] w-[480px]">
-            <h2 className="xl:text-[20px] text-[18px] font-sans font-semibold">Effortless scheduling with no limits</h2>
-            <p className="text-para xl:text-[16px] text-[14px]">Easily manage endless appointments, clients, and locations using a smart and intuitive calendar.</p>
-            </div>
+            <h2 className="xl:text-[20px] text-[18px] font-sans font-semibold">Deeper customer insights at your fingertips</h2>
+            <p className="text-para xl:text-[16px] text-[14px]">View detailed client profiles including visit trends, service preferences, payment choices, favorite channels, and total value over time.</p>
+        </div>
         </div>
         <div className="pt-10">
             <div className="border-l-4 xl:px-6 px-2 border-[#6E00B7] xl:h-[75px] h-[50px] flex flex-col xl:w-[529px] w-[480px]">
-            <h2 className="xl:text-[20px] text-[18px] font-sans font-semibold">Effortless scheduling with no limits</h2>
-            <p className="text-para xl:text-[16px] text-[14px]">Easily manage endless appointments, clients, and locations using a smart and intuitive calendar.</p>
+            <h2 className="xl:text-[20px] text-[18px] font-sans font-semibold">Smooth operations, stronger brand presence</h2>
+            <p className="text-para xl:text-[16px] text-[14px]">Streamline your workflow, reduce manual tasks, and deliver a seamless experience that elevates your brand.</p>
             </div>
         </div>
       </div>

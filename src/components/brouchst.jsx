@@ -31,7 +31,7 @@ function Brouchst() {
 
   return (
     <div className="bg-gradient-to-b from-purple-100 to-purple-200 h-[800px] py-16">
-      <section className="max-w-4xl mx-auto px-6">
+      <section className="max-w-4xl mx-auto px-6 relative">
         {/* Header */}
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-[58px] font-bold text-[#070027] mb-6 leading-[99%] font-sans">
@@ -48,8 +48,11 @@ function Brouchst() {
           </p>
         </div>
 
+
         {/* Cards Stack */}
-        <div className="relative max-w-5xl mx-auto my-auto">
+        <div className="relative max-w-5xl    mx-auto my-auto">
+        <div className="">
+
           {cards.map((card, index) => (
             <Card
               key={index}
@@ -61,6 +64,10 @@ function Brouchst() {
               activePosition={activeCard}
             />
           ))}
+        </div>
+        </div>
+        <div className="absolute  right-10 -bottom-70">
+          <img src="/Group 46.png" alt="" />
         </div>
       </section>
     </div>
