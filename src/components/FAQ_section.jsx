@@ -2,13 +2,13 @@ import React, { useState } from "react";
 import { ChevronDown } from "lucide-react";
 
 const FAQSection = () => {
-  const [openItem, setOpenItem] = useState(); // First item is open by default
+  const [openItem, setOpenItem] = useState(0); // First item is open by default
 
   const faqData = [
     {
       question: "Was Ist Die Styling Corner Plattform?",
       answer:
-        "Unsere Plattform bietet ein System für vielseitige Online-Präsentationen. Wir sind Marken, die Qualität und den Service der verschiedenen Nutzer bieten. So bringt Sie ihrer Vision zu einem besseren Online-Auftritt. Unsere eigene Lösung sorgt für eine perfekte Marken-Welt.",
+        "Unsere Plattform bietet dir Zugang zu echten Erfahrungsberichten, die dir helfen, die Qualität und den Service der verschiedenen Salons besser einzuschätzen. Genieße Sicherheit, dass dein Termin zu einem positiven Erlebnis wird!",
     },
     {
       question: "Wie Funktioniert Die Buchung Auf Der Plattform?",
@@ -32,7 +32,7 @@ const FAQSection = () => {
   };
 
   return (
-    <div className="py-40 px-8 font-sans relative">
+    <div className="md:py-40 py-12 md:px-8 px-4 font-sans relative">
       <img
         src="/ellipse.png"
         alt="hello"
@@ -43,11 +43,10 @@ const FAQSection = () => {
         src="/ellipse-2.png"
         alt=""
         className="w-auto h-auto absolute -top-40 bottom-40 left-0 mx-auto mb-12"
-        draggable="false"
       />
       <div className="max-w-4xl mx-auto">
         {/* Header */}
-        <div className="text-center mb-12 text-[58px]">
+        <div className="text-center mb-12 md:text-[58px] text-[28px] leading-[32px] md:leading-[67px]">
           <h2 className="font-bold text-gray-900 mb-4">
             Frequently Asked{" "}
             <span className="text-[#6E00B7] italic font-serif">Questions</span>
@@ -55,23 +54,23 @@ const FAQSection = () => {
         </div>
 
         {/* FAQ Accordion */}
-        <div className="space-y-4">
+        <div className="space-y-3 md:space-y-4">
           {faqData.map((item, index) => (
             <div
               key={index}
-              className={`rounded-full flex shadow-sm border border-gray-100 overflow-hidden transition-all duration-300 hover:shadow-md ${
+              className={`md:rounded-full rounded-2xl flex shadow-sm border border-gray-100 overflow-hidden transition-all duration-300 hover:shadow-md ${
                 openItem === index ? "bg-white z-50" : " bg-background"
               }`}
             >
               {/* Question Header */}
               <button
                 onClick={() => toggleItem(index)}
-                className="w-full px-12 py-6 text-left flex items-center justify-between z-10"
+                className="w-full md:px-12 px-4 md:py-6 py-5 text-left flex items-center justify-between z-10"
               >
-                <div className="flex flex-col">
-                  <span className="text-[20px] font-[900]  mr-4">
+                <div className="flex flex-col flex-1">
+                  <span className="md:text-[20px] text-[14px] font-[900] md:mr-4 mr-2">
                     {String(index + 1).padStart(2, "0")}
-                    <span className="text-[26px] font-[900] text-gray-900 ml-5">
+                    <span className="md:text-[26px] text-[16px] leading-[120%] md:leading-[100%] font-[900] text-gray-900 md:ml-5 ml-3  md:inline mt-1 md:mt-0">
                       {item.question}
                     </span>
                   </span>
@@ -84,30 +83,28 @@ const FAQSection = () => {
                         : "max-h-0 opacity-0"
                     }`}
                   >
-                    <div className="px-8 pb-6">
-                      <div className="pl-1 mt-3">
-                        {" "}
-                        {/* Align with question text */}
-                        <p className="text-gray-600 leading-[100%] text-left text-[14px]">
+                    <div className="md:px-8 px-0 pb-6 md:pb-6">
+                      <div className="md:pl-1 pl-0 mt-3">
+                        <p className="text-gray-600 leading-[140%] md:leading-[100%] text-left text-[12px] md:text-[14px]">
                           {item.answer}
                         </p>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div className="flex items-center justify-center w-auto h-full my-auto">
+                <div className="flex items-center justify-center w-auto h-full my-auto ml-3">
                   {openItem === index ? (
-                    <div className="w-14 h-14 bg-[#6E00B7] rounded-full flex items-center justify-center">
+                    <div className="md:w-14 md:h-14 w-10 h-10 bg-[#6E00B7] rounded-full flex items-center justify-center">
                       <ChevronDown
-                        size={24}
-                        className=" text-white transform rotate-180 transition-transform duration-300"
+                        size={20}
+                        className="md:w-6 md:h-6 w-4 h-4 text-white transform rotate-180 transition-transform duration-300"
                       />
                     </div>
                   ) : (
-                    <div className="w-14 h-14 bg-[#5964D324] rounded-full flex items-center justify-center">
+                    <div className="md:w-14 md:h-14 w-10 h-10 bg-[#5964D324] rounded-full flex items-center justify-center">
                       <ChevronDown
-                        size={24}
-                        className=" text-[#5F5959] transition-transform duration-300"
+                        size={20}
+                        className="md:w-6 md:h-6 w-4 h-4 text-[#5F5959] transition-transform duration-300"
                       />
                     </div>
                   )}

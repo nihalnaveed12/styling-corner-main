@@ -2,14 +2,14 @@ import { ArrowRight } from "lucide-react";
 
 const SupportSection = () => {
   return (
-    <div className="py-20 px-8 font-sans">
+    <div className="mt-10 md:mt-0 py-20 md:px-8 px-3 font-sans">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
-        <div className="text-center mb-16 text-[58px]">
-          <h2 className=" font-bold text-gray-900 leading-[67px]">
+        <div className="text-center mb-16 md:text-[58px] text-[34px]">
+          <h2 className=" font-bold text-gray-900 md:leading-[67px] leading-[40px]">
             Always Here For You -
           </h2>
-          <h3 className=" font-bold text-[#6E00B7] italic mb-6 font-serif leading-[67px]">
+          <h3 className=" font-bold text-[#6E00B7] italic mb-6 font-serif md:leading-[67px] leading-[40px]">
             Anytime, Anywhere
           </h3>
           <p className="text-gray-600 text-[16px] max-w-2xl mx-auto">
@@ -41,16 +41,32 @@ const SupportSection = () => {
               </div>
 
               <div className="absolute top-0 left-0 ">
-                <img src="/Ellipse 24.png" alt="" className="w-24 blur-lg opacity-30"/>
+                <img
+                  src="/Ellipse 24.png"
+                  alt=""
+                  className="w-24 blur-lg opacity-30"
+                />
               </div>
               <div className="absolute bottom-0 left-0 ">
-                <img src="/Ellipse 24.png" alt="" className="w-16 blur-lg opacity-30"/>
+                <img
+                  src="/Ellipse 24.png"
+                  alt=""
+                  className="w-16 blur-lg opacity-30"
+                />
               </div>
               <div className="absolute left-[50%]">
-                <img src="/Ellipse 35.png" alt="" className=" blur-lg opacity-50"/>
+                <img
+                  src="/Ellipse 35.png"
+                  alt=""
+                  className=" blur-lg opacity-50"
+                />
               </div>
               <div className="absolute bottom-0  right-0">
-                <img src="/Ellipse 35.png" alt="" className=" blur-lg opacity-50"/>
+                <img
+                  src="/Ellipse 35.png"
+                  alt=""
+                  className=" blur-lg opacity-50"
+                />
               </div>
 
               <div className="flex items-center">

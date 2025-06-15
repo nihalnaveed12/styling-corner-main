@@ -7,10 +7,10 @@ const SuccessServicesSection = () => {
 
       <section className="">
         {/* Header */}
-        <div className="mb-16">
-          <h2 className="text-[58px] leading-[67px] font-bold text-gray-900 mb-4 font-sans">
+        <div className="md:mb-16 mb-8">
+          <h2 className="md:text-[58px] text-[34px] md:leading-[67px] leading-[40px] font-bold text-gray-900 mb-4 font-sans">
             Dedicated To Your{" "}
-            <span className="text-[#6E00B7] italic font-serif font-normal text-[58px]">
+            <span className="text-[#6E00B7] italic font-serif font-normal md:text-[58px] text-[34px] ">
               Success
             </span>
           </h2>
@@ -21,9 +21,9 @@ const SuccessServicesSection = () => {
         </div>
 
         {/* Services Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10 py-2 mt-32">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 md:gap-10 gap-20 py-2 md:mt-32">
           {/* Personal Support Manager */}
-          <div className="rounded-2xl mb-5 mr-4">
+          <div className="rounded-2xl md:mb-5 mr-4">
             <h3 className="text-xl font-bold text-gray-900 mb-4 font-sans">
               Personal Support Manager
             </h3>
@@ -34,7 +34,7 @@ const SuccessServicesSection = () => {
           </div>
 
           {/* Brand Assistance */}
-          <div className="rounded-2xl mb-5">
+          <div className="rounded-2xl md:mb-5">
             <h3 className="text-xl font-bold text-gray-900 mb-4 font-sans">
               Brand Assistance
             </h3>
@@ -45,7 +45,7 @@ const SuccessServicesSection = () => {
           </div>
 
           {/* 24/7 Priority Support */}
-          <div className="rounded-2xl mb-5">
+          <div className="rounded-2xl md:mb-5">
             <h3 className="text-xl font-bold text-gray-900 mb-4 font-sans">
               24/7 Priority Support
             </h3>
