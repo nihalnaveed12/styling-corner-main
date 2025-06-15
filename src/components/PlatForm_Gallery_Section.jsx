@@ -1,10 +1,10 @@
 import { ArrowRight } from "lucide-react";
 const Card = ({ image, label }) => (
-  <div className="relative group overflow-hidden rounded-2xl h-full cursor-pointer font-sans">
+  <div className="relative group overflow-hidden rounded-2xl md:h-full h-[131px] w-[201px] md:w-auto cursor-pointer font-sans">
     <img
       src={image}
       alt={label}
-      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300 ease-in-out border-b-purple-600 border-b-4 rounded-2xl shadow-lg group-hover:shadow-xl"
+      className="md:w-full md:h-full w-[201px] h-[131px] object-cover hover:scale-105 transition-transform duration-300 ease-in-out border-b-purple-600 border-b-4 rounded-2xl shadow-lg group-hover:shadow-xl"
     />
 
     {/* Top Gradient Overlay */}
@@ -104,15 +104,18 @@ const PlatformGallerySection = () => {
   // Custom auto-scroll component since Swiper isn't available
   const AutoScrollRow = ({ cards, direction = "left", speed = 30 }) => {
     return (
-      <div className="relative overflow-hidden h-full">
+      <div className="relative overflow-hidden md:h-full h-[131px]">
         <div
-          className="flex h-full gap-4 w-max"
+          className="flex md:h-full h-[131px] gap-4 w-max"
           style={{
             animation: `scroll-${direction} ${speed}s linear infinite`,
           }}
         >
           {[...cards, ...cards, ...cards].map((card, index) => (
-            <div key={index} className="flex-shrink-0 w-[420px] h-full">
+            <div
+              key={index}
+              className="flex-shrink-0 md:w-[420px] w-[201px] md:h-full h-[131px]"
+            >
               <Card image={card.image} label={card.label} />
             </div>
           ))}
@@ -140,16 +143,16 @@ const PlatformGallerySection = () => {
   };
 
   return (
-    <div className="py-40 mb-40 px-8">
+    <div className="py-40 mb-40 md:px-8">
       <div className=" mx-auto">
         <div className="text-left mb-12">
-          <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
+          <h2 className="text-[30px] md:text-5xl lg:text-6xl font-[700] text-gray-900 md:leading-[90px] text-center md:text-left">
             A Platform For{" "}
             <span className="text-purple-600 font-serif italic">Everyone</span>
           </h2>
         </div>
         <div className="rounded-2xl overflow-hidden">
-          <div className="grid grid-rows-2 gap-4 h-[480px]">
+          <div className="grid grid-rows-2 gap-4 md:h-[480px] h-auto">
             <AutoScrollRow cards={topRowCards} direction="left" speed={25} />
             <AutoScrollRow
               cards={bottomRowCards}

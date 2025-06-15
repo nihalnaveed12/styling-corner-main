@@ -2,7 +2,7 @@ import { FaTiktok, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="bg-linear-to-b from-[#6E00B7] to-[#200333] text-white py-16">
+    <footer className="bg-linear-to-b from-[#6E00B7] to-[#200333] text-white md:py-16 py-8">
       <div className="mx-auto">
         {/* Main Footer Content */}
         <div className="mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 mb-16 px-7">
@@ -97,9 +97,8 @@ export default function Footer() {
         </div>
 
         {/* Brand Logos Section */}
-        <div className="flex justify-between items-center gap-6 mb-8 px-7">
-          <div className="flex items-center gap-6"></div>
-          <div className="flex items-center gap-6">
+        <div className="flex md:justify-end justify-center items-center gap-6 mb-8 px-7">
+          <div className="flex items-center md:gap-6 gap-20">
             <FaInstagram className="text-2xl text-white hover:text-purple-200 transition-colors cursor-pointer" />
             <FaTiktok className="text-2xl text-white hover:text-purple-200 transition-colors cursor-pointer" />
             <FaLinkedinIn className="text-2xl text-white hover:text-purple-200 transition-colors cursor-pointer" />
@@ -107,11 +106,11 @@ export default function Footer() {
         </div>
 
         {/* Bottom Section */}
-        
-        <div className="flex flex-col lg:flex-row px-4 justify-between items-start lg:items-center pt-8 border-t border-white/20">
+
+        <div className="flex flex-col-reverse md:flex-row  justify-between items-start lg:items-center pt-8 border-t border-white/20">
           {/* Copyright */}
-          <div className="mb-6 lg:mb-0 px-7">
-            <p className="font-sans font-light text-[16px] text-white">
+          <div className="lg:mb-0 md:px-7 px-2">
+            <p className="font-sans font-light md:text-[16px] text-[14px] text-white mx-auto text-center">
               © 2025 Styling Corner ® Brand of Resolut Technologies GmbH |{" "}
               <span className="text-white hover:text-purple-200 transition-colors font-bold italic">
                 Customer-Login
@@ -120,9 +119,9 @@ export default function Footer() {
           </div>
 
           {/* Right side - Social links and legal */}
-          <div className="flex flex-col lg:flex-row px-7 items-start lg:items-center gap-6">
+          <div className="flex flex-col lg:flex-row px-7 items-start lg:items-center gap-6 mb-8 md:mb-0">
             {/* Legal Links */}
-            <div className="flex items-center gap-4 font-sans text-[16px] font-light text-white ">
+            <div className="flex items-center gap-4 font-sans md:text-[16px] text-[14px] font-light text-white ">
               <p className="hover:text-white transition-colors">AGB's</p>
               <span>|</span>
               <p className="hover:text-white transition-colors">

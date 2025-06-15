@@ -120,7 +120,7 @@ function TrustPlat() {
               {getVisibleTestimonials().map((testimonial, index) => (
                 <div
                   key={`${testimonial.id}-${index}`}
-                  className="flex-shrink-0 w-[280px] bg-[#F1F1F1] cursor-pointer rounded-lg p-6 shadow-lg font-sans"
+                  className="flex-shrink-0 w-[320px] bg-[#F1F1F1] cursor-pointer rounded-lg p-6 shadow-lg font-sans"
                   style={{ minWidth: "280px" }}
                 >
                   {/* Avatar and Info */}
