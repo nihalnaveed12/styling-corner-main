@@ -37,6 +37,20 @@ section {
   padding: 0 18px;
 }
 
+@media only screen and (max-width:650px) {
+
+  .mobile-hero {
+     height: 200px;
+  }
+}
+@media only screen and (max-width:460px) {
+
+  .mobile-hero {
+     height: 130px;
+  }
+}
+
+
 .hero {
   background: #6e00b7;
   background: linear-gradient(360deg,

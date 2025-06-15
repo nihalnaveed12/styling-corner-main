@@ -3,16 +3,16 @@ import React from "react";
 
 function Hero() {
   return (
-    <div className="hero relative py-[98px]">
+    <div className="hero relative py-[98px] ">
       <div className="">
-        <div className="flex flex-col gap-6">
-          <h1 className="font-[900] font-sans text-center text-secondary text-[64px] leading-[100%]">
+        <div className="flex flex-col gap-6 px-7">
+          <h1 className="font-[900] font-sans text-center text-secondary sm:text-[64px] text-[44px] leading-[100%]">
             Smart Solutions for Modern <br />
             <span className="font-serif italic text-primary">
               Salons & Spas
             </span>
           </h1>
-          <p className="text-center font-sans">
+          <p className="text-center text-sm font-sans">
             Simple, flexible and powerful booking software for your business.
           </p>
 
@@ -28,13 +28,17 @@ function Hero() {
         </div>
       </div>
 
-      <div className="flex max-w-6xl mx-auto pr-40">
+      <div className="flex relative max-w-7xl items-center mx-auto lg:pr-40 md:pr-30 sm:pr-20 pr-10">
         <div className="relative z-[15]">
-          <img src="/Group 50.png" alt="" className="  " />
-          <div className="absolute bottom-20 w-[250px] lg:h-[500px] md:h-[400px] h-[300px] -right-30 ">
-            <img src="/Frame 36.png" alt="" className="lg:h-full md:h-[400px] h-[300px]" />
-          </div>
+          <img src="/Group 50.png" alt="" className=" sm:w-full w-[90%]" />
         </div>
+          <div className="absolute z-[20] xl:top-24  lg:top-20 md:top-[10%] right-10">
+            <img
+              src="/Frame 36.png"
+              alt=""
+              className="object-cover xl:h-[500px] lg:h-[420px] md:h-[350px] sm:h-[260px] mobile-hero"
+            />
+          </div>
       </div>
 
       <div className="text-white flex flex-col gap-20">
@@ -83,25 +87,47 @@ function Hero() {
       </div>
 
       <div className="absolute bottom-0  z-[10]">
-        <img src="/Ellipse 24.png" alt="" className="opacity-20 blur-2xl w-50 " />
+        <img
+          src="/Ellipse 24.png"
+          alt=""
+          className="opacity-20 blur-2xl w-50 "
+        />
       </div>
-     <div className="absolute bottom-20 md:left-[25%] left-60  z-[12]">
-        <img src="/Ellipse 21.png" alt="" className="opacity-20 blur-xl w-74 shadow-2xl inset-8 inset-ring-orange-500 rounded-full border-none outline-none shadow-[#D2998D]" />
+      <div className="absolute bottom-20 md:left-[25%] left-60  z-[12]">
+        <img
+          src="/Ellipse 21.png"
+          alt=""
+          className="opacity-20 blur-xl w-74 shadow-2xl inset-8 inset-ring-orange-500 rounded-full border-none outline-none shadow-[#D2998D]"
+        />
       </div>
       <div className="absolute bottom-50 md:right-[20%]  right-60  z-[12]">
-        <img src="/Ellipse 21.png" alt="" className="opacity-20 blur-xl w-74 shadow-2xl inset-8 inset-ring-orange-500 rounded-full border-none outline-none shadow-[#D2998D]" />
+        <img
+          src="/Ellipse 21.png"
+          alt=""
+          className="opacity-20 blur-xl w-74 shadow-2xl inset-8 inset-ring-orange-500 rounded-full border-none outline-none shadow-[#D2998D]"
+        />
       </div>
       <div className="absolute bottom-0 -right-0 z-[12]">
-        <img src="/Ellipse 21.png" alt="" className="opacity-20 blur-xl w-74 shadow-2xl inset-8 inset-ring-orange-500 rounded-full border-none outline-none shadow-[#D2998D]" />
+        <img
+          src="/Ellipse 21.png"
+          alt=""
+          className="opacity-20 blur-xl w-74 shadow-2xl inset-8 inset-ring-orange-500 rounded-full border-none outline-none shadow-[#D2998D]"
+        />
       </div>
       <div className="absolute bottom-40 right-[40%] z-[12]">
-        <img src="/Ellipse 26.png" alt="" className="opacity-25 blur-xl shadow-2xl inset-8 inset-ring-orange-500 rounded-full border-none outline-none shadow-[#D2998D]" />
+        <img
+          src="/Ellipse 26.png"
+          alt=""
+          className="opacity-25 blur-xl shadow-2xl inset-8 inset-ring-orange-500 rounded-full border-none outline-none shadow-[#D2998D]"
+        />
       </div>
       <div className="absolute bottom-[30%] right-0 z-[12]">
-        <img src="/Ellipse 26.png" alt="" className="opacity-15 blur-xl shadow-2xl inset-8 inset-ring-orange-500 rounded-full border-none outline-none shadow-[#D2998D]" />
+        <img
+          src="/Ellipse 26.png"
+          alt=""
+          className="opacity-15 blur-xl shadow-2xl inset-8 inset-ring-orange-500 rounded-full border-none outline-none shadow-[#D2998D]"
+        />
       </div>
-      
-
     </div>
   );
 }
