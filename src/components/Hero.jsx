@@ -46,7 +46,7 @@ function Hero() {
           Rated 5 Stars ★★★★★ Trusted and loved by users on Capterra
         </p>
 
-        <div className="max-w-[1100px] mx-auto px-2 grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 justify-center xl:gap-36 gap-26">
+        <div className="max-w-[1100px] z-[20] mx-auto px-2 grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 justify-center xl:gap-36 gap-26">
           <div className="">
             <h2 className="xl:text-[38px] text-[32px] font-sans font-semibold">
               130,000+

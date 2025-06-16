@@ -49,6 +49,24 @@ section {
      height: 130px;
   }
 }
+@media only screen and (max-width:500px) {
+
+  .one-box {
+     height: 180px;
+  }
+  .one-img {
+     height: 180px;
+  }
+}
+@media only screen and (max-width:400px) {
+
+  .one-box {
+     height: 150px;
+  }
+  .one-img {
+     height: 150px;
+  }
+}
 
 
 .hero {
