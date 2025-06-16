@@ -143,7 +143,7 @@ const PlatformGallerySection = () => {
   };
 
   return (
-    <div className="py-40 mb-40 md:px-8">
+    <div className="md:py-40 py-20 md:mb-40 md:px-8">
       <div className=" mx-auto">
         <div className="text-left mb-12">
           <h2 className="text-[30px] md:text-5xl lg:text-6xl font-[700] text-gray-900 md:leading-[90px] text-center md:text-left">

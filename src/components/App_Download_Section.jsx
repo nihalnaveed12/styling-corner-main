@@ -12,7 +12,7 @@ export default function AppDownloadSection() {
               Styling Corner App
             </span>
           </h1>
-          <p className="text-gray-700 font-sans ">
+          <p className="text-gray-700 font-sans md:block hidden">
             Discover and book beauty and wellness experiences near you –
             anytime, anywhere.
           </p>
@@ -21,7 +21,7 @@ export default function AppDownloadSection() {
         {/* Main Content */}
         <div className="flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-20">
           {/* Left Section - Customer App */}
-          <div className="flex md:flex-row-reverse flex-col-reverse items-center text-center lg:text-left">
+          <div className="flex md:flex-row-reverse flex-col-reverse items-center text-center lg:text-left gap-7">
             <div className="mb-8">
               <img
                 src="/mobile-img.png"
@@ -31,23 +31,23 @@ export default function AppDownloadSection() {
                 height={1200}
               />
             </div>
-            <div className="max-w-sm">
-              <h2 className="text-[38px] leading-[100%] font-sans font-[900] text-gray-900 mb-4">
+            <div className="max-w-sm ">
+              <h2 className="md:text-[38px] text-[28px] text-left leading-[100%] font-sans font-[900] text-gray-900 mb-4">
                 Booking App For Customers
               </h2>
-              <p className="text-gray-700 font-sans mb-6 leading-relaxed">
+              <p className="text-gray-700 font-sans mb-6 leading-relaxed text-left mr-20 md:mr-0">
                 Book beauty and wellness experiences near you
               </p>
               <div className="flex md:flex-col sm:flex-row gap-3 justify-center lg:justify-start mb-10">
                 <img
                   src="/apple.png"
                   alt="Download on App Store"
-                  className="md:h-auto md:w-auto w-[165px] h-[62px]"
+                  className="md:h-[50px] md:w-[145px] w-[165px] h-[62px]"
                 />
                 <img
                   src="/play-store.png"
                   alt="Get it on Google Play"
-                  className="md:h-auto md:w-auto w-[165px] h-[62px]"
+                  className="md:h-[50px] md:w-[145px] w-[165px] h-[62px]"
                 />
               </div>
             </div>
@@ -65,10 +65,10 @@ export default function AppDownloadSection() {
               />
             </div>
             <div className="max-w-sm">
-              <h2 className="text-[38px] leading-[100%] font-sans font-[900] text-gray-900 mb-4">
+              <h2 className="md:text-[38px] text-[28px] text-left leading-[100%] font-sans font-[900] text-gray-900 mb-4">
                 Business App For Companies
               </h2>
-              <p className="text-gray-700 font-sans mb-6 leading-relaxed">
+              <p className="text-gray-700 font-sans mb-6 leading-relaxed text-left mr-20 md:mr-0">
                 Simple, flexible and powerful software for managing your
                 business – even on the go
               </p>
@@ -76,12 +76,12 @@ export default function AppDownloadSection() {
                 <img
                   src="/apple.png"
                   alt="Download on App Store"
-                  className="md:h-auto md:w-auto w-[165px] h-[62px]"
+                  className="md:h-[50px] md:w-[145px] w-[165px] h-[62px]"
                 />
                 <img
                   src="/play-store.png"
                   alt="Get it on Google Play"
-                  className="md:h-auto md:w-auto w-[165px] h-[62px]"
+                  className="md:h-[50px] md:w-[145px] w-[165px] h-[62px]"
                 />
               </div>
             </div>
