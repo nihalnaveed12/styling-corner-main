@@ -76,7 +76,7 @@ function OnePlatform() {
             </span>
           </h1>
 
-          <p className="text-para font-sans sm:text-[18px] text-[12px] text-center line-clamp-3">
+          <p className="text-para font-sans sm:text-[18px] text-[12px] text-center ">
             Unlock your business's full potential with Styling Corner. From
             boosting sales and managing appointments to keeping clients coming
             back—our powerful tools help you grow with ease, so you can focus on
