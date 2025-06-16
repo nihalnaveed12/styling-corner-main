@@ -111,7 +111,7 @@ export default function Footer() {
           {/* Copyright */}
           <div className="lg:mb-0 md:px-7 px-2">
             <p className="font-sans font-light md:text-[16px] text-[14px] text-white mx-auto text-center">
-              © 2025 Styling Corner ® Brand of Resolut Technologies GmbH |{" "}
+              © 2025 Styling Corner |{" "}
               <span className="text-white hover:text-purple-200 transition-colors font-bold italic">
                 Customer-Login
               </span>

@@ -26,42 +26,49 @@ const SupportSection = () => {
             <div className="absolute inset-0 bg-gradient-to-br from-gray-100 to-gray-200 opacity-100 group-hover:opacity-0 transition-opacity duration-500 "></div>
 
             {/* Hover State - Purple gradient */}
-            <div className="absolute inset-0 bg-gradient-to-br from-purple-500 via-purple-600 to-purple-700 opacity-100 "></div>
+            <div className="absolute inset-0 bg-[#6E00B7] opacity-100 "></div>
 
             {/* Content */}
-            <div className="relative z-10 p-10 h-full flex flex-col justify-between min-h-[280px]">
+            <div className="relative z-[10] p-10 h-full flex flex-col justify-between min-h-[280px]">
               <div>
-                <h3 className="text-2xl font-bold mb-4 text-white transition-colors duration-500">
+                <h3 className="text-2xl z-[20] font-bold mb-4 text-white transition-colors duration-500">
                   Help Center
                 </h3>
-                <p className="text-white/90 transition-colors duration-500 leading-relaxed mb-8">
+                <p className="text-white/90 relative z-[12] transition-colors duration-500 leading-relaxed mb-8">
                   Browse our knowledge base for expert tips, how-to guides, and
                   useful insights.
                 </p>
               </div>
 
-              <div className="absolute top-0 left-0 ">
+              <div className="absolute z-[8] top-0 left-0 ">
                 <img
                   src="/Ellipse 24.png"
                   alt=""
                   className="w-24 blur-lg opacity-30"
                 />
               </div>
-              <div className="absolute bottom-0 left-0 ">
+              <div className="absolute z-[8] bottom-0 left-0 ">
                 <img
                   src="/Ellipse 24.png"
                   alt=""
                   className="w-16 blur-lg opacity-30"
                 />
               </div>
-              <div className="absolute left-[50%]">
+              <div className="absolute z-[8] left-[60%] top-0">
                 <img
                   src="/Ellipse 35.png"
                   alt=""
                   className=" blur-lg opacity-50"
                 />
               </div>
-              <div className="absolute bottom-0  right-0">
+              <div className="absolute bottom-0 z-[8] right-0">
+                <img
+                  src="/Ellipse 35.png"
+                  alt=""
+                  className=" blur-lg opacity-50"
+                />
+              </div>
+              <div className="absolute bottom-0 z-[8] right-[50%]">
                 <img
                   src="/Ellipse 35.png"
                   alt=""
@@ -69,7 +76,7 @@ const SupportSection = () => {
                 />
               </div>
 
-              <div className="flex items-center">
+              <div className="flex z-[12] items-center">
                 <span className=" text-white font-medium transition-colors duration-500">
                   Go to Help Center
                 </span>

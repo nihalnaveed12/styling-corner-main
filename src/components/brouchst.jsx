@@ -66,7 +66,7 @@ function Brouchst() {
         </div>
 
         {/* Decorative image - hidden on smaller screens */}
-        <div className="absolute right-4 lg:right-10 -bottom-70 hidden lg:block">
+        <div className="absolute right-4 lg:right-10 bottom-35 hidden lg:block">
           <img src="/Group 46.png" alt="" />
         </div>
       </section>

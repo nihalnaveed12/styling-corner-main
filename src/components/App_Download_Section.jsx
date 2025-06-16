@@ -38,7 +38,7 @@ export default function AppDownloadSection() {
               <p className="text-gray-700 font-sans mb-6 leading-relaxed text-left mr-20 md:mr-0">
                 Book beauty and wellness experiences near you
               </p>
-              <div className="flex md:flex-col sm:flex-row gap-3 justify-center lg:justify-start mb-10">
+              <div className="flex flex-row gap-3 lg:justify-start mb-10">
                 <img
                   src="/apple.png"
                   alt="Download on App Store"
@@ -72,7 +72,7 @@ export default function AppDownloadSection() {
                 Simple, flexible and powerful software for managing your
                 business – even on the go
               </p>
-              <div className="flex md:flex-col sm:flex-row gap-3 justify-center lg:justify-start mb-10">
+              <div className="flex flex-row gap-3  lg:justify-start mb-10">
                 <img
                   src="/apple.png"
                   alt="Download on App Store"
