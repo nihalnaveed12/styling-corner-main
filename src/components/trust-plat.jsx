@@ -92,21 +92,21 @@ function TrustPlat() {
     <section>
       <div className="py-[92px]">
         <div className="flex flex-col gap-8">
-          <h1 className="font-bold font-sans text-secondary xl:text-[58px] lg:text-[45px] sm:text-[30px] text-[20px] ">
+          <h1 className="font-bold font-sans xl:text-[58px] md:text-[45px] sm:text-[40px] text-[30px]  text-secondary">
             The{" "}
             <span className="text-primary font-serif italic">
               Trusted Platform
-            </span>{" "}
-            for Beauty <br /> Professionals
+            </span> {" "}
+            For Beauty Professionals
           </h1>
 
-          <div className="flex gap-10 items-center">
-            <img src="/Line 1.png" alt="" className="h-2" />
-            <span className=" text-para font-sans text-[16px] ">
+          <div className="flex gap-6 md:items-center">
+            <img src="/Line 1.png" alt="" className="sm:h-2 h-[6px] sm:mt-0 mt-6" />
+            <span className=" text-para font-sans sm:text-[16px] text-[12px] w-[80%] ">
               Earning the top spot in the industry takes more than just great
-              software—it takes a commitment to excellence. <br /> Our powerful
+              software—it takes a commitment to excellence. Our powerful
               booking tools and seamless user experience have made us the
-              preferred choice for salons and spas worldwide. <br /> Explore
+              preferred choice for salons and spas worldwide. Explore
               some of our amazing partners and see why they trust us to power
               their business.
             </span>
@@ -171,6 +171,10 @@ function TrustPlat() {
               ))}
             </div>
           </div>
+        </div>
+
+        <div className="flex justify-center items-center pt-14">
+            <img src="/Group 46 (1).png" alt="" />
         </div>
       </div>
     </section>

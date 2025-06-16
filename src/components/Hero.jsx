@@ -17,10 +17,10 @@ function Hero() {
           </p>
 
           <div className="flex justify-center gap-4 pb-10">
-            <button className="bg-primary text-white sm:w-[225px] w-[160px] sm:h-[54px]">
+            <button className="bg-primary text-white sm:w-[225px] w-[150px] text-[12px] sm:h-[54px]">
               Get Started Now
             </button>
-            <button className="bg-white border-2 border-secondary px-1 sm:text-lg text-sm sm:w-[225px] w-[160px] h-[40px] sm:h-[54px] flex items-center justify-center gap-2">
+            <button className="bg-white border-2 border-secondary px-1 sm:text-lg text-[12px] sm:w-[225px] w-[150px] h-[36px] sm:h-[54px] flex items-center justify-center gap-2">
               <Video size={16} className="h-3 w-3 sm:h-4 sm:w-4" />
               Watch Introduction
             </button>
@@ -42,7 +42,7 @@ function Hero() {
       </div>
 
       <div className="text-white flex flex-col sm:gap-20 gap-14">
-        <p className="text-center font-sans text-[14px] pt-10 sm:text-[18px]">
+        <p className="text-center font-sans text-[14px] pt-10 px-4 sm:text-[18px]">
           Rated 5 Stars ★★★★★ Trusted and loved by users on Capterra
         </p>
 
