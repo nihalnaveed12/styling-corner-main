@@ -70,7 +70,7 @@ const FAQSection = () => {
                 <div className="flex flex-col flex-1">
                   <span className="md:text-[20px] text-[14px] font-[900] md:mr-4 mr-2">
                     {String(index + 1).padStart(2, "0")}
-                    <span className="md:text-[26px] text-[16px] leading-[120%] md:leading-[100%] font-[900] text-gray-900 md:ml-5 ml-3  md:inline mt-1 md:mt-0">
+                    <span className="md:text-[26px] text-[16px] leading-[120%] md:leading-[100%] font-[900] text-gray-900 md:ml-4 ml-3  md:inline mt-1 md:mt-0">
                       {item.question}
                     </span>
                   </span>
@@ -84,8 +84,8 @@ const FAQSection = () => {
                     }`}
                   >
                     <div className="md:px-8 px-0 pb-6 md:pb-6">
-                      <div className="md:pl-1 pl-0 mt-3">
-                        <p className="text-gray-600 leading-[140%] md:leading-[100%] text-left text-[12px] md:text-[14px]">
+                      <div className=" pl-0 mt-3">
+                        <p className="text-gray-600 pl-[6px] leading-[140%] md:leading-[100%] text-left text-[12px] md:text-[14px]">
                           {item.answer}
                         </p>
                       </div>

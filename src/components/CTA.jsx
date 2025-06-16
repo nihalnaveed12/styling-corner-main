@@ -2,8 +2,8 @@ import React from "react";
 
 const CTASection = () => {
   return (
-    <div className="bg-gradient-to-r relative from-purple-600 via-purple-700 to-purple-800 py-20 px-8 font-sans">
-      <div className=" mx-auto text-center">
+    <div className="bg-gradient-to-r relative from-purple-600 via-purple-700 to-purple-800 flex items-center flex-col justify-center  py-20 px-8 h-[472px] font-sans">
+      <div className="mx-auto text-center">
         <h2 className="md:text-[58px] text-[34px] leading-[40px] font-bold font-sans text-white mb-4">
           Ready To <span className="font-serif">Grow?</span>
         </h2>
