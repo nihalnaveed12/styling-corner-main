@@ -3,7 +3,7 @@ import React from "react";
 
 function Hero() {
   return (
-    <div className="hero relative py-[98px] ">
+    <div className="hero relative sm:py-[98px] py-[90px] ">
       <div className="">
         <div className="flex flex-col gap-6 px-7">
           <h1 className="font-[900] font-sans text-center text-secondary sm:text-[64px] text-[44px] leading-[100%]">
@@ -16,12 +16,12 @@ function Hero() {
             Simple, flexible and powerful booking software for your business.
           </p>
 
-          <div className="flex justify-center gap-4">
-            <button className="bg-primary text-white w-[225px] h-[54px]">
+          <div className="flex justify-center gap-4 pb-10">
+            <button className="bg-primary text-white sm:w-[225px] w-[160px] sm:h-[54px]">
               Get Started Now
             </button>
-            <button className="bg-white border-2 border-secondary w-[225px] h-[54px] flex items-center justify-center gap-2">
-              <Video size={16} />
+            <button className="bg-white border-2 border-secondary px-1 sm:text-lg text-sm sm:w-[225px] w-[160px] h-[40px] sm:h-[54px] flex items-center justify-center gap-2">
+              <Video size={16} className="h-3 w-3 sm:h-4 sm:w-4" />
               Watch Introduction
             </button>
           </div>
@@ -41,22 +41,22 @@ function Hero() {
           </div>
       </div>
 
-      <div className="text-white flex flex-col gap-20">
-        <p className="text-center font-sans text-[18px]">
+      <div className="text-white flex flex-col sm:gap-20 gap-14">
+        <p className="text-center font-sans text-[14px] pt-10 sm:text-[18px]">
           Rated 5 Stars ★★★★★ Trusted and loved by users on Capterra
         </p>
 
         <div className="max-w-[1100px] z-[20] mx-auto px-2 grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 justify-center xl:gap-36 gap-26">
           <div className="">
-            <h2 className="xl:text-[38px] text-[32px] font-sans font-semibold">
+            <h2 className="xl:text-[38px] text-[32px] text-center font-sans font-semibold">
               130,000+
             </h2>
-            <p className="xl:text-[18px] text-[14px]  font-sans">
+            <p className="xl:text-[18px] text-[14px] text-center  font-sans">
               Partner Companies
             </p>
           </div>
           <div className="">
-            <h2 className="xl:text-[38px] text-[32px] font-sans font-semibold">
+            <h2 className="xl:text-[38px] text-[32px] text-center font-sans font-semibold">
               450,000+
             </h2>
             <p className="xl:text-[18px] text-[14px] font-sans text-center">
@@ -64,19 +64,19 @@ function Hero() {
             </p>
           </div>
           <div className="">
-            <h2 className="xl:text-[38px] text-[32px] font-sans font-semibold">
-              130,000+
+            <h2 className="xl:text-[38px] text-[32px] text-center font-sans font-semibold">
+              1 Billion+
             </h2>
-            <p className="xl:text-[18px] text-[14px] font-sans">
-              Partner Companies
+            <p className="xl:text-[18px] text-[14px] text-center font-sans">
+              Stylish and professionals
             </p>
           </div>
           <div className="">
-            <h2 className="xl:text-[38px] text-[32px] font-sans font-semibold">
-              130,000+
+            <h2 className="xl:text-[38px] text-[32px] text-center font-sans font-semibold">
+              120+
             </h2>
             <p className="xl:text-[18px] text-[14px] font-sans text-center">
-              Partner Companies
+              Countries
             </p>
           </div>
         </div>
