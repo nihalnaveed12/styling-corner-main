@@ -21,12 +21,12 @@ export default function AppDownloadSection() {
         {/* Main Content */}
         <div className="flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-20">
           {/* Left Section - Customer App */}
-          <div className="flex md:flex-row-reverse flex-col-reverse items-center text-center lg:text-left gap-7">
+          <div className="flex lg:flex-row-reverse flex-col-reverse items-center text-center lg:text-left gap-7">
             <div className="mb-8">
               <img
                 src="/mobile-img.png"
                 alt="Customer booking app interface"
-                className="md:w-[236px] md:h-[316px] w-auto h-auto mx-auto lg:mx-0"
+                className="lg:w-[236px] lg:h-[316px] w-auto h-auto mx-auto lg:mx-0"
                 width={1200}
                 height={1200}
               />
@@ -54,12 +54,12 @@ export default function AppDownloadSection() {
           </div>
 
           {/* Right Section - Business App */}
-          <div className="flex md:flex-row-reverse flex-col-reverse items-center text-center lg:text-left">
+          <div className="flex lg:flex-row-reverse flex-col-reverse items-center text-center lg:text-left">
             <div className="mb-8 relative">
               <img
                 src="/mobile-img-2.png"
                 alt="Business management app interface"
-                className="md:w-[350px] md:h-[380px] w-auto h-auto mx-auto lg:mx-0 relative md:top-9"
+                className="lg:w-[350px] lg:h-[380px] w-auto h-auto mx-auto lg:mx-0 relative md:top-9"
                 width={1000}
                 height={1000}
               />
@@ -72,7 +72,7 @@ export default function AppDownloadSection() {
                 Simple, flexible and powerful software for managing your
                 business – even on the go
               </p>
-              <div className="flex flex-row gap-3  lg:justify-start mb-10">
+              <div className="flex flex-row gap-3 lg:justify-start mb-10">
                 <img
                   src="/apple.png"
                   alt="Download on App Store"
