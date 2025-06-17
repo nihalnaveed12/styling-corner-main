@@ -33,8 +33,8 @@ function Brouchst() {
     <div className="bg-gradient-to-b from-purple-100 to-purple-200 min-h-[800px] lg:h-[800px] py-8 lg:py-16">
       <section className="max-w-4xl mx-auto sm:px-6 relative">
         {/* Header */}
-        <div className="text-center mb-8 lg:mb-16">
-          <h1 className="text-[34px] sm:text-3xl md:text-4xl lg:text-[58px] font-bold text-[#070027] mb-4 lg:mb-6 leading-tight lg:leading-[99%] font-sans">
+        <div className="text-center mb-10 lg:mb-16">
+          <h1 className="font-bold font-sans pb-6 text-center text-secondary xl:text-[58px] md:text-[45px] sm:text-[38px] text-[30px]">
             Alles, Was Du Für Eine Erfolgreiche{" "}
             <span className="text-[#6E00B7] italic font-serif">
               Unternehmensführung
@@ -66,7 +66,7 @@ function Brouchst() {
         </div>
 
         {/* Decorative image - hidden on smaller screens */}
-        <div className="absolute right-4 lg:right-10 -bottom-70 hidden lg:block">
+        <div className="absolute right-4 lg:right-10 bottom-35 hidden lg:block">
           <img src="/Group 46.png" alt="" />
         </div>
       </section>
