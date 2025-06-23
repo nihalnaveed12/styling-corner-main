@@ -58,8 +58,8 @@ const FAQSection = () => {
           {faqData.map((item, index) => (
             <div
               key={index}
-              className={`md:rounded-full rounded-2xl flex shadow-sm border border-gray-100 overflow-hidden transition-all duration-300 hover:shadow-md ${
-                openItem === index ? "bg-white z-50" : " bg-background"
+              className={`md:rounded-full rounded-2xl flex shadow-sm border border-gray-100 overflow-hidden transition-all duration-300 hover:shadow-xl ${
+                openItem === index ? "bg-white z-[70]" : " bg-background"
               }`}
             >
               {/* Question Header */}
