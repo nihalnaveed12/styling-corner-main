@@ -32,19 +32,19 @@ const FAQSection = () => {
   };
 
   return (
-    <div className="md:py-40 py-12 md:px-8 px-4 font-sans relative">
+    <div className="md:py-40 py-12 md:px-8 px-4 font-sans relative z-10">
       <img
         src="/ellipse.png"
         alt="hello"
-        className="w-auto h-auto absolute -top-82 bottom-40 right-0 mx-auto mb-12"
+        className="w-auto h-auto absolute z-0 -top-82 bottom-40 right-0 mx-auto mb-12"
         draggable="false"
       />
       <img
         src="/ellipse-2.png"
         alt=""
-        className="w-auto h-auto absolute -top-40 bottom-40 left-0 mx-auto mb-12"
+        className="w-auto h-auto absolute z-0 -top-40 bottom-40 left-0 mx-auto mb-12"
       />
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-4xl mx-auto relative z-10">
         {/* Header */}
         <div className="text-center mb-12 md:text-[58px] text-[28px] leading-[32px] md:leading-[67px]">
           <h2 className="font-bold text-gray-900 mb-4">
@@ -54,12 +54,14 @@ const FAQSection = () => {
         </div>
 
         {/* FAQ Accordion */}
-        <div className="space-y-3 md:space-y-4">
+        <div className="space-y-3 md:space-y-4 relative z-10">
           {faqData.map((item, index) => (
             <div
               key={index}
               className={`md:rounded-full rounded-2xl flex shadow-sm border border-gray-100 overflow-hidden transition-all duration-300 hover:shadow-xl ${
-                openItem === index ? "bg-white z-[70]" : " bg-background"
+                openItem === index
+                  ? "bg-white relative z-20"
+                  : "bg-background relative z-10"
               }`}
             >
               {/* Question Header */}
@@ -83,7 +85,7 @@ const FAQSection = () => {
                         : "max-h-0 opacity-0"
                     }`}
                   >
-                    <div className="md:px-8 px-0 pb-6 md:pb-6">
+                    <div className="md:px-8 px-0 ">
                       <div className=" pl-0 mt-3">
                         <p className="text-gray-600 pl-[6px] leading-[140%] md:leading-[100%] text-left text-[12px] md:text-[14px]">
                           {item.answer}
